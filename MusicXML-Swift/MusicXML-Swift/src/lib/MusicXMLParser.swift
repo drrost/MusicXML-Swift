@@ -56,6 +56,8 @@ extension MusicXMLParser: XMLParserDelegate {
             scorePartwise.part.measure.attributes.key = Key()
         case Time.xmlTag:
             scorePartwise.part.measure.attributes.time = Time()
+        case Clef.xmlTag:
+            scorePartwise.part.measure.attributes.clef = Clef()
         default:
             break
         }
@@ -84,6 +86,10 @@ extension MusicXMLParser: XMLParserDelegate {
             scorePartwise.part.measure.attributes.time.beats = string
         case Time.xmlBeatTypeTag:
             scorePartwise.part.measure.attributes.time.beatType = string
+        case Clef.xmlSignTag:
+            scorePartwise.part.measure.attributes.clef?.sign = Clef.Sign(rawValue: string)
+        case Clef.xmlLineTag:
+            scorePartwise.part.measure.attributes.clef?.line = Int(string)
         default:
             break
         }

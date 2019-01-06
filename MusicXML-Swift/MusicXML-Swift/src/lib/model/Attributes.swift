@@ -21,4 +21,6 @@ struct Attributes {
     var key: Key!
 
     var time: Time!
+
+    var clef: Clef?
 }

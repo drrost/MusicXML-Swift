@@ -28,6 +28,8 @@ class MusicXMLSwiftTests: XCTestCase {
         XCTAssertTrue(score.part.measure.attributes.key.fifths == 0)
         XCTAssertTrue(score.part.measure.attributes.time.beats == "4")
         XCTAssertTrue(score.part.measure.attributes.time.beatType == "4")
+        XCTAssertTrue(score.part.measure.attributes.clef?.sign == .G)
+        XCTAssertTrue(score.part.measure.attributes.clef?.line == 2)
     }
 
 }
