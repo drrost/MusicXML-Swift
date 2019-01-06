@@ -12,6 +12,8 @@ class ScorePartwiseView: UIView {
 
     fileprivate var scorePartwise: ScorePartwise!
 
+    fileprivate let color = UIColor.black
+
     func update(_ aScorePartwise: ScorePartwise) {
         scorePartwise = aScorePartwise
     }
@@ -22,12 +24,14 @@ class ScorePartwiseView: UIView {
         guard let context = UIGraphicsGetCurrentContext() else { return }
         drawText(context: context,
                  text: scorePartwise.partList.scorePart.partName.partNameText)
+        drawStaff(context: context)
     }
 
+    // MARK: - Private API
+
     fileprivate func drawText(context: CGContext, text: String) {
-        context.textMatrix = .identity
-        context.translateBy(x: 0, y: bounds.size.height)
-        context.scaleBy(x: 1.0, y: -1.0)
+
+        translate(context: context)
 
         let path = CGMutablePath()
         path.addRect(bounds)
@@ -41,5 +45,30 @@ class ScorePartwiseView: UIView {
             framesetter, CFRangeMake(0, attrString.length), path, nil)
 
         CTFrameDraw(frame, context)
+    }
+
+    fileprivate func drawStaff(context: CGContext) {
+
+        translate(context: context)
+
+        let kStaffSpace: CGFloat = 10.0
+        let kStaffLineWidth: CGFloat = 1.0
+        let kTopOffset: CGFloat =  20.0
+        let kSideOffset: CGFloat = 10.0
+        context.setStrokeColor(color.cgColor)
+        context.setLineWidth(kStaffLineWidth)
+
+        for i in 1...5 {
+            let y = kTopOffset + CGFloat(i) * kStaffSpace
+            context.move(to: CGPoint(x: kSideOffset, y: y))
+            context.addLine(to: CGPoint(x: frame.size.width - kSideOffset, y: y))
+            context.drawPath(using: .fillStroke)
+        }
+    }
+
+    fileprivate func translate(context: CGContext) {
+        context.textMatrix = .identity
+        context.translateBy(x: 0, y: bounds.size.height)
+        context.scaleBy(x: 1.0, y: -1.0)
     }
 }
