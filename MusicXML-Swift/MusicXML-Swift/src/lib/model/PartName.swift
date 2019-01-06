@@ -10,5 +10,7 @@ import Foundation
 
 class PartName {
 
+    static let xmlTag = "part-name"
+
     var partNameText: String!
 }

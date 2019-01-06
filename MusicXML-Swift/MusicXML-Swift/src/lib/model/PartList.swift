@@ -10,5 +10,7 @@ import Foundation
 
 class PartList {
 
+    static let xmlTag = "part-list"
+
     var scorePart: ScorePart!
 }

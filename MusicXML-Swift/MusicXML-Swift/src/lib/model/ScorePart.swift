@@ -10,6 +10,8 @@ import Foundation
 
 class ScorePart {
 
+    static let xmlTag = "score-part"
+
     var id: String?
 
     var partName: PartName!

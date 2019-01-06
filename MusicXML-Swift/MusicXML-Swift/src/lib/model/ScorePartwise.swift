@@ -11,4 +11,6 @@ import Foundation
 class ScorePartwise {
 
     var partList: PartList!
+
+    var part: Part!
 }

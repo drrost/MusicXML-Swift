@@ -40,12 +40,14 @@ extension MusicXMLParser: XMLParserDelegate {
             print("PARSER: attirbutes \(attributeDict)")
         }
         switch elementName {
-        case "part-list":
+        case PartList.xmlTag:
             scorePartwise.partList = PartList()
-        case "score-part":
+        case ScorePart.xmlTag:
             scorePartwise.partList.scorePart = ScorePart()
-        case "part-name":
+        case PartName.xmlTag:
             scorePartwise.partList.scorePart.partName = PartName()
+        case Part.xmlTag:
+            scorePartwise.part = Part(from: attributeDict)
         default:
             break
         }
@@ -64,7 +66,7 @@ extension MusicXMLParser: XMLParserDelegate {
             print("PARSER: foundCharacters \"\(string)\"")
         }
         switch lastElementName {
-        case "part-name":
+        case PartName.xmlTag:
             scorePartwise.partList.scorePart.partName.partNameText = string
         default:
             break

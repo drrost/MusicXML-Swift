@@ -16,10 +16,13 @@ class MusicXMLSwiftTests: XCTestCase {
 
     func testExample() {
         let parser = MusicXMLParser()
-        let score = parser.parse("HelloWorld.xml")
+        guard let score = parser.parse("HelloWorld.xml") else {
+            XCTFail("`ScorePartwise object should not be nil")
+            return
+        }
 
-        XCTAssertNotNil(score)
-        XCTAssertTrue(score?.partList.scorePart.partName.partNameText == "Music")
+        XCTAssertTrue(score.partList.scorePart.partName.partNameText == "Music")
+        XCTAssertTrue(score.part.id == "P1")
     }
 
 }

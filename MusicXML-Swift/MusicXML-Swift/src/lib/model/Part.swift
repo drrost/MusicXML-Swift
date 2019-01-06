@@ -10,5 +10,13 @@ import Foundation
 
 struct Part {
 
-    let id: String
+    static let xmlTag = "part"
+
+    var id: String!
+
+    init(from dictionary: [String: String]) {
+        if let id = dictionary["id"] {
+            self.id = id
+        }
+    }
 }
