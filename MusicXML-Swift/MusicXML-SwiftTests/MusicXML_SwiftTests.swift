@@ -14,7 +14,7 @@ class MusicXMLSwiftTests: XCTestCase {
     override func setUp() {
     }
 
-    func testExample() {
+    func testHelloWorldDocument() {
         let parser = MusicXMLParser()
         guard let score = parser.parse("HelloWorld.xml") else {
             XCTFail("`ScorePartwise object should not be nil")
