@@ -48,6 +48,8 @@ extension MusicXMLParser: XMLParserDelegate {
             scorePartwise.partList.scorePart.partName = PartName()
         case Part.xmlTag:
             scorePartwise.part = Part(from: attributeDict)
+        case Measure.xmlTag:
+            scorePartwise.part.measure = Measure(from: attributeDict)
         default:
             break
         }

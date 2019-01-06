@@ -14,6 +14,8 @@ struct Part {
 
     var id: String!
 
+    var measure: Measure!
+
     init(from dictionary: [String: String]) {
         if let id = dictionary["id"] {
             self.id = id

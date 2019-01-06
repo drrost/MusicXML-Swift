@@ -20,6 +20,8 @@
 		11BABC9321E1499B00642D46 /* ScorePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC9221E1499B00642D46 /* ScorePart.swift */; };
 		11BABC9521E149AB00642D46 /* ScorePartwise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC9421E149AB00642D46 /* ScorePartwise.swift */; };
 		11BABC9621E14DE300642D46 /* HelloWorld.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11BABC8621E148EB00642D46 /* HelloWorld.xml */; };
+		11BABC9821E2112E00642D46 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC9721E2112E00642D46 /* Measure.swift */; };
+		11BABC9A21E2119100642D46 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC9921E2119100642D46 /* Attributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		11BABC9021E1498C00642D46 /* PartName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartName.swift; sourceTree = "<group>"; };
 		11BABC9221E1499B00642D46 /* ScorePart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePart.swift; sourceTree = "<group>"; };
 		11BABC9421E149AB00642D46 /* ScorePartwise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePartwise.swift; sourceTree = "<group>"; };
+		11BABC9721E2112E00642D46 /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		11BABC9921E2119100642D46 /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				11BABC8C21E1496C00642D46 /* Part.swift */,
+				11BABC9721E2112E00642D46 /* Measure.swift */,
 				11BABC8E21E1497E00642D46 /* PartList.swift */,
 				11BABC9021E1498C00642D46 /* PartName.swift */,
 				11BABC9221E1499B00642D46 /* ScorePart.swift */,
 				11BABC9421E149AB00642D46 /* ScorePartwise.swift */,
+				11BABC9921E2119100642D46 /* Attributes.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -282,11 +288,13 @@
 			files = (
 				11BABC9321E1499B00642D46 /* ScorePart.swift in Sources */,
 				11BABC9521E149AB00642D46 /* ScorePartwise.swift in Sources */,
+				11BABC9821E2112E00642D46 /* Measure.swift in Sources */,
 				11BABC8D21E1496C00642D46 /* Part.swift in Sources */,
 				11BABC6321E141E600642D46 /* ViewController.swift in Sources */,
 				11BABC8A21E1494100642D46 /* MusicXMLParser.swift in Sources */,
 				11BABC9121E1498C00642D46 /* PartName.swift in Sources */,
 				11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */,
+				11BABC9A21E2119100642D46 /* Attributes.swift in Sources */,
 				11BABC8F21E1497E00642D46 /* PartList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
