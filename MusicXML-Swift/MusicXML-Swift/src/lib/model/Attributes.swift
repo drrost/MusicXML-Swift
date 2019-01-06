@@ -14,5 +14,9 @@ struct Attributes {
 
     static let xmlDivisionsTag = "divisions"
 
+    static let xmlFifthsTag = "fifths"
+
     var divisions: Int?
+
+    var key: Key!
 }

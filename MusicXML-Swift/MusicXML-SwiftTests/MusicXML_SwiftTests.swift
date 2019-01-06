@@ -25,6 +25,7 @@ class MusicXMLSwiftTests: XCTestCase {
         XCTAssertTrue(score.part.id == "P1")
         XCTAssertTrue(score.part.measure.number == 1)
         XCTAssertTrue(score.part.measure.attributes.divisions == 1)
+        XCTAssertTrue(score.part.measure.attributes.key.fifths == 0)
     }
 
 }
