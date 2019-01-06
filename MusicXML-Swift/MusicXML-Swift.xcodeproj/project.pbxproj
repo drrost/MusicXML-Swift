@@ -158,18 +158,98 @@
 		11BABC8B21E1496100642D46 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				11BABC9F21E2224800642D46 /* Clef.swift */,
-				11BABC8C21E1496C00642D46 /* Part.swift */,
-				11BABC9721E2112E00642D46 /* Measure.swift */,
-				11BABC8E21E1497E00642D46 /* PartList.swift */,
-				11BABC9021E1498C00642D46 /* PartName.swift */,
-				11BABC9221E1499B00642D46 /* ScorePart.swift */,
-				11BABC9421E149AB00642D46 /* ScorePartwise.swift */,
-				11BABC9921E2119100642D46 /* Attributes.swift */,
-				11BABC9D21E21DCE00642D46 /* Time.swift */,
-				11BABC9B21E21A4200642D46 /* Key.swift */,
+				11BABCA121E225EE00642D46 /* ScorePartwise */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		11BABCA121E225EE00642D46 /* ScorePartwise */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCA221E2260C00642D46 /* PartList */,
+				11BABCA321E2261800642D46 /* Part */,
+				11BABC9421E149AB00642D46 /* ScorePartwise.swift */,
+			);
+			path = ScorePartwise;
+			sourceTree = "<group>";
+		};
+		11BABCA221E2260C00642D46 /* PartList */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCA421E2266600642D46 /* ScorePart */,
+				11BABC8E21E1497E00642D46 /* PartList.swift */,
+			);
+			path = PartList;
+			sourceTree = "<group>";
+		};
+		11BABCA321E2261800642D46 /* Part */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCA621E226AA00642D46 /* Measure */,
+				11BABC8C21E1496C00642D46 /* Part.swift */,
+			);
+			path = Part;
+			sourceTree = "<group>";
+		};
+		11BABCA421E2266600642D46 /* ScorePart */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCA521E2267D00642D46 /* PartName */,
+				11BABC9221E1499B00642D46 /* ScorePart.swift */,
+			);
+			path = ScorePart;
+			sourceTree = "<group>";
+		};
+		11BABCA521E2267D00642D46 /* PartName */ = {
+			isa = PBXGroup;
+			children = (
+				11BABC9021E1498C00642D46 /* PartName.swift */,
+			);
+			path = PartName;
+			sourceTree = "<group>";
+		};
+		11BABCA621E226AA00642D46 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCA721E226BC00642D46 /* Attributes */,
+				11BABC9721E2112E00642D46 /* Measure.swift */,
+			);
+			path = Measure;
+			sourceTree = "<group>";
+		};
+		11BABCA721E226BC00642D46 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCAA21E226D900642D46 /* Clef */,
+				11BABCA921E226D400642D46 /* Time */,
+				11BABCA821E226CE00642D46 /* Key */,
+				11BABC9921E2119100642D46 /* Attributes.swift */,
+			);
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		11BABCA821E226CE00642D46 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				11BABC9B21E21A4200642D46 /* Key.swift */,
+			);
+			path = Key;
+			sourceTree = "<group>";
+		};
+		11BABCA921E226D400642D46 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				11BABC9D21E21DCE00642D46 /* Time.swift */,
+			);
+			path = Time;
+			sourceTree = "<group>";
+		};
+		11BABCAA21E226D900642D46 /* Clef */ = {
+			isa = PBXGroup;
+			children = (
+				11BABC9F21E2224800642D46 /* Clef.swift */,
+			);
+			path = Clef;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
