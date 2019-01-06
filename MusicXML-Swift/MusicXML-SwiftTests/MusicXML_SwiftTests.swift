@@ -32,7 +32,8 @@ class MusicXMLSwiftTests: XCTestCase {
         XCTAssertTrue(score.part.measure.attributes.clef?.sign == .G)
         XCTAssertTrue(score.part.measure.attributes.clef?.line == 2)
 
-        XCTAssertTrue(score.part.measure.note.pitch.step == "C")
+        XCTAssertTrue(score.part.measure.note.duration == 4)
+        XCTAssertTrue(score.part.measure.note.type == .whole)
     }
 
 }

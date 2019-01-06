@@ -16,6 +16,8 @@ struct Measure {
 
     var attributes: Attributes!
 
+    var note: Note!
+
     init(from dictionary: [String: String]) {
         if let numberString = dictionary["number"] {
             self.number = Int(numberString) ?? -1

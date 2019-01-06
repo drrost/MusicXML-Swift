@@ -25,6 +25,9 @@
 		11BABC9C21E21A4200642D46 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC9B21E21A4200642D46 /* Key.swift */; };
 		11BABC9E21E21DCE00642D46 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC9D21E21DCE00642D46 /* Time.swift */; };
 		11BABCA021E2224800642D46 /* Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC9F21E2224800642D46 /* Clef.swift */; };
+		11BABCAD21E2272800642D46 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCAC21E2272800642D46 /* Note.swift */; };
+		11BABCB221E227DC00642D46 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB121E227DC00642D46 /* Pitch.swift */; };
+		11BABCB821E2295A00642D46 /* NoteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB721E2295A00642D46 /* NoteType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		11BABC9B21E21A4200642D46 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		11BABC9D21E21DCE00642D46 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		11BABC9F21E2224800642D46 /* Clef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clef.swift; sourceTree = "<group>"; };
+		11BABCAC21E2272800642D46 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		11BABCB121E227DC00642D46 /* Pitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
+		11BABCB721E2295A00642D46 /* NoteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 		11BABC8B21E1496100642D46 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				11BABCB621E2295200642D46 /* BasicTypes */,
 				11BABCA121E225EE00642D46 /* ScorePartwise */,
 			);
 			path = model;
@@ -211,6 +218,7 @@
 		11BABCA621E226AA00642D46 /* Measure */ = {
 			isa = PBXGroup;
 			children = (
+				11BABCAB21E2272000642D46 /* Note */,
 				11BABCA721E226BC00642D46 /* Attributes */,
 				11BABC9721E2112E00642D46 /* Measure.swift */,
 			);
@@ -250,6 +258,31 @@
 				11BABC9F21E2224800642D46 /* Clef.swift */,
 			);
 			path = Clef;
+			sourceTree = "<group>";
+		};
+		11BABCAB21E2272000642D46 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCAE21E227C900642D46 /* Pitch */,
+				11BABCAC21E2272800642D46 /* Note.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		11BABCAE21E227C900642D46 /* Pitch */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCB121E227DC00642D46 /* Pitch.swift */,
+			);
+			path = Pitch;
+			sourceTree = "<group>";
+		};
+		11BABCB621E2295200642D46 /* BasicTypes */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCB721E2295A00642D46 /* NoteType.swift */,
+			);
+			path = BasicTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BABC9E21E21DCE00642D46 /* Time.swift in Sources */,
+				11BABCB821E2295A00642D46 /* NoteType.swift in Sources */,
 				11BABCA021E2224800642D46 /* Clef.swift in Sources */,
 				11BABC9321E1499B00642D46 /* ScorePart.swift in Sources */,
 				11BABC9521E149AB00642D46 /* ScorePartwise.swift in Sources */,
@@ -384,6 +418,8 @@
 				11BABC8D21E1496C00642D46 /* Part.swift in Sources */,
 				11BABC6321E141E600642D46 /* ViewController.swift in Sources */,
 				11BABC8A21E1494100642D46 /* MusicXMLParser.swift in Sources */,
+				11BABCB221E227DC00642D46 /* Pitch.swift in Sources */,
+				11BABCAD21E2272800642D46 /* Note.swift in Sources */,
 				11BABC9121E1498C00642D46 /* PartName.swift in Sources */,
 				11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */,
 				11BABC9A21E2119100642D46 /* Attributes.swift in Sources */,
