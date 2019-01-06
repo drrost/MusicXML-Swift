@@ -19,4 +19,6 @@ struct Attributes {
     var divisions: Int?
 
     var key: Key!
+
+    var time: Time!
 }
