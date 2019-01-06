@@ -28,6 +28,7 @@
 		11BABCAD21E2272800642D46 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCAC21E2272800642D46 /* Note.swift */; };
 		11BABCB221E227DC00642D46 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB121E227DC00642D46 /* Pitch.swift */; };
 		11BABCB821E2295A00642D46 /* NoteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB721E2295A00642D46 /* NoteType.swift */; };
+		11BABCBA21E22D2900642D46 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB921E22D2900642D46 /* Step.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		11BABCAC21E2272800642D46 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		11BABCB121E227DC00642D46 /* Pitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
 		11BABCB721E2295A00642D46 /* NoteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteType.swift; sourceTree = "<group>"; };
+		11BABCB921E22D2900642D46 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				11BABCB721E2295A00642D46 /* NoteType.swift */,
+				11BABCB921E22D2900642D46 /* Step.swift */,
 			);
 			path = BasicTypes;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			files = (
 				11BABC9E21E21DCE00642D46 /* Time.swift in Sources */,
 				11BABCB821E2295A00642D46 /* NoteType.swift in Sources */,
+				11BABCBA21E22D2900642D46 /* Step.swift in Sources */,
 				11BABCA021E2224800642D46 /* Clef.swift in Sources */,
 				11BABC9321E1499B00642D46 /* ScorePart.swift in Sources */,
 				11BABC9521E149AB00642D46 /* ScorePartwise.swift in Sources */,

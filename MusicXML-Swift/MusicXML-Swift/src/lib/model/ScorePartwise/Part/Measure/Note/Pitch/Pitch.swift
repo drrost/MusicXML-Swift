@@ -11,4 +11,12 @@ import Foundation
 struct Pitch {
 
     static let xmlTag = "pitch"
+
+    static let xmlStepTag = "step"
+
+    static let xmlOctaveTag = "octave"
+
+    var step: Step!
+
+    var octave: UInt!
 }
