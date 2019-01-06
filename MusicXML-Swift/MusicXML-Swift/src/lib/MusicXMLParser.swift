@@ -50,6 +50,8 @@ extension MusicXMLParser: XMLParserDelegate {
             scorePartwise.part = Part(from: attributeDict)
         case Measure.xmlTag:
             scorePartwise.part.measure = Measure(from: attributeDict)
+        case Attributes.xmlTag:
+            scorePartwise.part.measure.attributes = Attributes()
         default:
             break
         }
@@ -70,6 +72,8 @@ extension MusicXMLParser: XMLParserDelegate {
         switch lastElementName {
         case PartName.xmlTag:
             scorePartwise.partList.scorePart.partName.partNameText = string
+        case Attributes.xmlDivisionsTag:
+            scorePartwise.part.measure.attributes.divisions = Int(string)
         default:
             break
         }

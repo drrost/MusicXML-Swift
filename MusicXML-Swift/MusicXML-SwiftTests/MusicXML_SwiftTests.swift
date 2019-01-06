@@ -24,6 +24,7 @@ class MusicXMLSwiftTests: XCTestCase {
         XCTAssertTrue(score.partList.scorePart.partName.partNameText == "Music")
         XCTAssertTrue(score.part.id == "P1")
         XCTAssertTrue(score.part.measure.number == 1)
+        XCTAssertTrue(score.part.measure.attributes.divisions == 1)
     }
 
 }

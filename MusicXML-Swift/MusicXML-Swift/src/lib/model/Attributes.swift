@@ -10,5 +10,9 @@ import Foundation
 
 struct Attributes {
 
+    static let xmlTag = "attributes"
+
+    static let xmlDivisionsTag = "divisions"
+
     var divisions: Int?
 }
