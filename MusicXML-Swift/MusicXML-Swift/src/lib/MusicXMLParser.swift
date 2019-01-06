@@ -35,10 +35,6 @@ extension MusicXMLParser: XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String,
                 namespaceURI: String?, qualifiedName qName: String?,
                 attributes attributeDict: [String: String] = [:]) {
-        print("PARSER: element started \"<\(elementName)>\"")
-        if attributeDict.count > 0 {
-            print("PARSER: attirbutes \(attributeDict)")
-        }
         switch elementName {
         case PartList.xmlTag:
             scorePartwise.partList = PartList()
@@ -71,14 +67,10 @@ extension MusicXMLParser: XMLParserDelegate {
 
     func parser(_ parser: XMLParser, didEndElement elementName: String,
                 namespaceURI: String?, qualifiedName qName: String?) {
-        print("PARSER: element ended \"</\(elementName)>\"")
         lastElementName = ""
     }
 
     func parser(_ parser: XMLParser, foundCharacters string: String) {
-        if string.trim().count > 0 {
-            print("PARSER: foundCharacters \"\(string)\"")
-        }
         switch lastElementName {
         case PartName.xmlTag:
             scorePartwise.partList.scorePart.partName.partNameText = string

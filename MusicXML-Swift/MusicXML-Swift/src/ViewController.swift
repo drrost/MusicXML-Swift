@@ -10,8 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var scoreView: ScorePartwiseView!
+
+    let parser = MusicXMLParser()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if let scorePartwise = parser.parse("HelloWorld.xml") {
+            scoreView.update(scorePartwise)
+        }
     }
 
 }

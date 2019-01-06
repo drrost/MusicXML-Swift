@@ -29,6 +29,7 @@
 		11BABCB221E227DC00642D46 /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB121E227DC00642D46 /* Pitch.swift */; };
 		11BABCB821E2295A00642D46 /* NoteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB721E2295A00642D46 /* NoteType.swift */; };
 		11BABCBA21E22D2900642D46 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB921E22D2900642D46 /* Step.swift */; };
+		11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		11BABCB121E227DC00642D46 /* Pitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch.swift; sourceTree = "<group>"; };
 		11BABCB721E2295A00642D46 /* NoteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteType.swift; sourceTree = "<group>"; };
 		11BABCB921E22D2900642D46 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePartwiseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		11BABC8821E148FF00642D46 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				11BABCBB21E27CE800642D46 /* view */,
 				11BABC8B21E1496100642D46 /* model */,
 				11BABC8921E1494100642D46 /* MusicXMLParser.swift */,
 			);
@@ -286,6 +289,14 @@
 				11BABCB921E22D2900642D46 /* Step.swift */,
 			);
 			path = BasicTypes;
+			sourceTree = "<group>";
+		};
+		11BABCBB21E27CE800642D46 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +433,7 @@
 				11BABC8D21E1496C00642D46 /* Part.swift in Sources */,
 				11BABC6321E141E600642D46 /* ViewController.swift in Sources */,
 				11BABC8A21E1494100642D46 /* MusicXMLParser.swift in Sources */,
+				11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */,
 				11BABCB221E227DC00642D46 /* Pitch.swift in Sources */,
 				11BABCAD21E2272800642D46 /* Note.swift in Sources */,
 				11BABC9121E1498C00642D46 /* PartName.swift in Sources */,
