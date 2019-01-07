@@ -1,4 +1,4 @@
-# MusicXML-Swift
+# MusicXML-Swift: Parsing and Drawing
 Swift implementation for MusicXML format (parsing and drawing)
 
 See more details [here](https://www.musicxml.com).

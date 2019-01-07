@@ -30,6 +30,7 @@
 		11BABCB821E2295A00642D46 /* NoteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB721E2295A00642D46 /* NoteType.swift */; };
 		11BABCBA21E22D2900642D46 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB921E22D2900642D46 /* Step.swift */; };
 		11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */; };
+		11BABCC121E353AA00642D46 /* ScorePartwiseView+Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		11BABCB721E2295A00642D46 /* NoteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteType.swift; sourceTree = "<group>"; };
 		11BABCB921E22D2900642D46 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePartwiseView.swift; sourceTree = "<group>"; };
+		11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Clef.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */,
+				11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -413,7 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n                            swiftlint autocorrect\n                              swiftlint\n                            else\n                              echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n                            fi";
+			shellScript = "if which swiftlint >/dev/null; then\n                            swiftlint autocorrect\n#swiftlint\n                            else\n                              echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n                            fi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -436,6 +439,7 @@
 				11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */,
 				11BABCB221E227DC00642D46 /* Pitch.swift in Sources */,
 				11BABCAD21E2272800642D46 /* Note.swift in Sources */,
+				11BABCC121E353AA00642D46 /* ScorePartwiseView+Clef.swift in Sources */,
 				11BABC9121E1498C00642D46 /* PartName.swift in Sources */,
 				11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */,
 				11BABC9A21E2119100642D46 /* Attributes.swift in Sources */,

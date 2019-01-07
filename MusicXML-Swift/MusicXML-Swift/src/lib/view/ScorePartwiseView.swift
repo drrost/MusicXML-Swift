@@ -35,6 +35,8 @@ class ScorePartwiseView: UIView {
                  text: scorePartwise.partList.scorePart.partName.partNameText)
         drawStaff(context)
         closeLastStaff(context)
+
+        gClef(context, scale: 1.4, point: CGPoint(x: 15.0, y: 14.0))
     }
 
     // MARK: - Private API
