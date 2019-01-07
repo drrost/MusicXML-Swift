@@ -34,12 +34,17 @@ class ScorePartwiseView: UIView {
         drawText(context,
                  text: scorePartwise.partList.scorePart.partName.partNameText)
         drawStaff(context)
-        closeLastStaff(context)
 
-        drawGClef(context, scale: 1.4, point: CGPoint(x: 15.0, y: 14.0))
+        let kClefSideOffset = 15.0
+        drawGClef(context, scale: 1.4, point: CGPoint(x: kClefSideOffset, y: 14.0))
+        draw(time: scorePartwise.part.measure.attributes.time,
+             context: context,
+             point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
+
         let notesYStart = kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace
         draw(note: scorePartwise.part.measure.note, context: context,
-             point: CGPoint(x: 60.0, y: notesYStart + 2.0))
+             point: CGPoint(x: 70.0, y: notesYStart + 2.0))
+        closeLastStaff(context)
     }
 
     // MARK: - Private API
@@ -93,7 +98,7 @@ class ScorePartwiseView: UIView {
         context.drawPath(using: .fillStroke)
     }
 
-    fileprivate func translate(context: CGContext) {
+    public func translate(context: CGContext) {
         context.textMatrix = .identity
         context.translateBy(x: 0, y: bounds.size.height)
         context.scaleBy(x: 1.0, y: -1.0)

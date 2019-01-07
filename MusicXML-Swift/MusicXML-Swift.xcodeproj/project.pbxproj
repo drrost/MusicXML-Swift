@@ -32,6 +32,7 @@
 		11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */; };
 		11BABCC121E353AA00642D46 /* ScorePartwiseView+Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */; };
 		11BABCC321E37B2000642D46 /* ScorePartwiseView+Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */; };
+		11BABCC521E38BA300642D46 /* ScorePartwiseView+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePartwiseView.swift; sourceTree = "<group>"; };
 		11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Clef.swift"; sourceTree = "<group>"; };
 		11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Note.swift"; sourceTree = "<group>"; };
+		11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Time.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 				11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */,
 				11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */,
 				11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */,
+				11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				11BABC8A21E1494100642D46 /* MusicXMLParser.swift in Sources */,
 				11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */,
 				11BABCB221E227DC00642D46 /* Pitch.swift in Sources */,
+				11BABCC521E38BA300642D46 /* ScorePartwiseView+Time.swift in Sources */,
 				11BABCAD21E2272800642D46 /* Note.swift in Sources */,
 				11BABCC121E353AA00642D46 /* ScorePartwiseView+Clef.swift in Sources */,
 				11BABC9121E1498C00642D46 /* PartName.swift in Sources */,
