@@ -36,7 +36,10 @@ class ScorePartwiseView: UIView {
         drawStaff(context)
         closeLastStaff(context)
 
-        gClef(context, scale: 1.4, point: CGPoint(x: 15.0, y: 14.0))
+        drawGClef(context, scale: 1.4, point: CGPoint(x: 15.0, y: 14.0))
+        let notesYStart = kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace
+        draw(note: scorePartwise.part.measure.note, context: context,
+             point: CGPoint(x: 60.0, y: notesYStart + 2.0))
     }
 
     // MARK: - Private API

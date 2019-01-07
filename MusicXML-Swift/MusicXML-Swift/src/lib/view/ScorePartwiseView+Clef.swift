@@ -10,7 +10,7 @@ import UIKit
 
 extension ScorePartwiseView {
 
-    func gClef(_ context: CGContext, scale: CGFloat = 1.0, point: CGPoint = CGPoint(x: 0.0, y: 0.0)) {
+    func drawGClef(_ context: CGContext, scale: CGFloat = 1.0, point: CGPoint = CGPoint(x: 0.0, y: 0.0)) {
 
         context.saveGState()
         context.translateBy(x: point.x, y: point.y)

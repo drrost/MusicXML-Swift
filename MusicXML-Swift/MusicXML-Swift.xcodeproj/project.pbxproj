@@ -31,6 +31,7 @@
 		11BABCBA21E22D2900642D46 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCB921E22D2900642D46 /* Step.swift */; };
 		11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */; };
 		11BABCC121E353AA00642D46 /* ScorePartwiseView+Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */; };
+		11BABCC321E37B2000642D46 /* ScorePartwiseView+Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		11BABCB921E22D2900642D46 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePartwiseView.swift; sourceTree = "<group>"; };
 		11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Clef.swift"; sourceTree = "<group>"; };
+		11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Note.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 			children = (
 				11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */,
 				11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */,
+				11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				11BABC9121E1498C00642D46 /* PartName.swift in Sources */,
 				11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */,
 				11BABC9A21E2119100642D46 /* Attributes.swift in Sources */,
+				11BABCC321E37B2000642D46 /* ScorePartwiseView+Note.swift in Sources */,
 				11BABC8F21E1497E00642D46 /* PartList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
