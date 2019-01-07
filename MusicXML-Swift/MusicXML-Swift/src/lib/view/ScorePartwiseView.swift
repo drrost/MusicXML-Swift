@@ -15,7 +15,7 @@ class ScorePartwiseView: UIView {
     fileprivate let color = UIColor.black
     let kStaffSpace: CGFloat = 10.0
     let kStaffLineWidth: CGFloat = 1.0
-    let kStaffTopOffset: CGFloat =  20.0
+    let kStaffTopOffset: CGFloat = 30.0
     let kStaffSideOffset: CGFloat = 10.0
     let kLinesNumber: Int = 5
 
@@ -35,8 +35,8 @@ class ScorePartwiseView: UIView {
                  text: scorePartwise.partList.scorePart.partName.partNameText)
         drawStaff(context)
 
-        let kClefSideOffset = 15.0
-        drawGClef(context, scale: 1.4, point: CGPoint(x: kClefSideOffset, y: 14.0))
+        let kClefSideOffset: CGFloat = 15.0
+        drawGClef(context, scale: 1.4, point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
         draw(time: scorePartwise.part.measure.attributes.time,
              context: context,
              point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
