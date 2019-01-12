@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1166558B21E9F0C200E886BA /* C-dur.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1166558A21E9F0C200E886BA /* C-dur.xml */; };
+		1166558C21E9F19B00E886BA /* C-dur.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1166558A21E9F0C200E886BA /* C-dur.xml */; };
 		11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6021E141E600642D46 /* AppDelegate.swift */; };
 		11BABC6321E141E600642D46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6221E141E600642D46 /* ViewController.swift */; };
 		11BABC6621E141E600642D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BABC6421E141E600642D46 /* Main.storyboard */; };
@@ -46,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1166558A21E9F0C200E886BA /* C-dur.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "C-dur.xml"; sourceTree = "<group>"; };
 		11BABC5D21E141E600642D46 /* MusicXML-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicXML-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BABC6021E141E600642D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BABC6221E141E600642D46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +160,7 @@
 		11BABC8521E148EB00642D46 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				1166558A21E9F0C200E886BA /* C-dur.xml */,
 				11BABC8621E148EB00642D46 /* HelloWorld.xml */,
 			);
 			path = res;
@@ -391,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BABC6B21E141E700642D46 /* LaunchScreen.storyboard in Resources */,
+				1166558C21E9F19B00E886BA /* C-dur.xml in Resources */,
 				11BABC9621E14DE300642D46 /* HelloWorld.xml in Resources */,
 				11BABC6821E141E700642D46 /* Assets.xcassets in Resources */,
 				11BABC6621E141E600642D46 /* Main.storyboard in Resources */,
@@ -401,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1166558B21E9F0C200E886BA /* C-dur.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,7 +36,11 @@ class ScorePartwiseView: UIView {
         drawStaff(context)
 
         let kClefSideOffset: CGFloat = 15.0
-        drawGClef(context, scale: 1.4, point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
+        if let clef = scorePartwise.part.measure.attributes.clef {
+            draw(clef: clef, context, scale: 1.4,
+                 point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
+        }
+
         draw(time: scorePartwise.part.measure.attributes.time,
              context: context,
              point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))

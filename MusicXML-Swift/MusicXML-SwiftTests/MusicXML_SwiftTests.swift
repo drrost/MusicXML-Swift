@@ -46,6 +46,17 @@ class MusicXMLSwiftTests: XCTestCase {
             return
         }
 
+        // TODO: Check generated image
+    }
+
+    func testCdurGama() {
+
+        let parser = MusicXMLParser()
+        guard let score = parser.parse("C-dur.xml") else {
+            XCTFail("`ScorePartwise object should not be nil")
+            return
+        }
+
     }
 
 }
