@@ -66,8 +66,6 @@ class MusicXMLSwiftTests: XCTestCase {
 
         // Check measure 1
         var measure = score.part.measures[0]
-        XCTAssertTrue(score.partList.scorePart.partName.partNameText == "Piano")
-        XCTAssertTrue(score.part.id == "P1")
         XCTAssertTrue(measure.number == 1)
 
         XCTAssertTrue(measure.attributes?.divisions == 1)
@@ -109,6 +107,37 @@ class MusicXMLSwiftTests: XCTestCase {
         // Check measure 2
         measure = score.part.measures[1]
         XCTAssertTrue(measure.number == 2)
+
+        XCTAssertNil(measure.attributes)
+
+        XCTAssertTrue(measure.notes.count == 4)
+        note = measure.notes[0]
+        XCTAssertTrue(note.pitch.step == .G)
+        XCTAssertTrue(note.pitch.octave == 4)
+        XCTAssertTrue(note.duration == 1)
+        XCTAssertTrue(note.voice == "1")
+        XCTAssertTrue(note.type == .quarter)
+
+        note = measure.notes[1]
+        XCTAssertTrue(note.pitch.step == .A)
+        XCTAssertTrue(note.pitch.octave == 4)
+        XCTAssertTrue(note.duration == 1)
+        XCTAssertTrue(note.voice == "1")
+        XCTAssertTrue(note.type == .quarter)
+
+        note = measure.notes[2]
+        XCTAssertTrue(note.pitch.step == .B)
+        XCTAssertTrue(note.pitch.octave == 4)
+        XCTAssertTrue(note.duration == 1)
+        XCTAssertTrue(note.voice == "1")
+        XCTAssertTrue(note.type == .quarter)
+
+        note = measure.notes[3]
+        XCTAssertTrue(note.pitch.step == .C)
+        XCTAssertTrue(note.pitch.octave == 5)
+        XCTAssertTrue(note.duration == 1)
+        XCTAssertTrue(note.voice == "1")
+        XCTAssertTrue(note.type == .quarter)
     }
 
 }
