@@ -35,6 +35,7 @@
 		11BABCC121E353AA00642D46 /* ScorePartwiseView+Clef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */; };
 		11BABCC321E37B2000642D46 /* ScorePartwiseView+Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */; };
 		11BABCC521E38BA300642D46 /* ScorePartwiseView+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */; };
+		11F8140821EA3695005CC56E /* ScorePartwiseView+Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Clef.swift"; sourceTree = "<group>"; };
 		11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Note.swift"; sourceTree = "<group>"; };
 		11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Time.swift"; sourceTree = "<group>"; };
+		11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Measure.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 			children = (
 				11BABCBC21E2B04900642D46 /* ScorePartwiseView.swift */,
 				11BABCC021E353AA00642D46 /* ScorePartwiseView+Clef.swift */,
+				11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */,
 				11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */,
 				11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */,
 			);
@@ -442,6 +445,7 @@
 				11BABCBA21E22D2900642D46 /* Step.swift in Sources */,
 				11BABCA021E2224800642D46 /* Clef.swift in Sources */,
 				11BABC9321E1499B00642D46 /* ScorePart.swift in Sources */,
+				11F8140821EA3695005CC56E /* ScorePartwiseView+Measure.swift in Sources */,
 				11BABC9521E149AB00642D46 /* ScorePartwise.swift in Sources */,
 				11BABC9C21E21A4200642D46 /* Key.swift in Sources */,
 				11BABC9821E2112E00642D46 /* Measure.swift in Sources */,
