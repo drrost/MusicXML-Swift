@@ -35,19 +35,25 @@ class ScorePartwiseView: UIView {
                  text: scorePartwise.partList.scorePart.partName.partNameText)
         drawStaff(context)
 
-        let kClefSideOffset: CGFloat = 15.0
-        if let clef = scorePartwise.part.measure.attributes.clef {
-            draw(clef: clef, context, scale: 1.4,
-                 point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
+        let measures = scorePartwise.part.measures
+        guard measures.count > 0 else { return }
+
+        if let attributes = measures[0].attributes {
+            if let clef = attributes.clef {
+                let kClefSideOffset: CGFloat = 15.0
+                draw(clef: clef, context, scale: 1.4,
+                     point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
+            }
+
+            draw(time: attributes.time,
+                 context: context,
+                 point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
         }
 
-        draw(time: scorePartwise.part.measure.attributes.time,
-             context: context,
-             point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
-
         let notesYStart = kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace
-        draw(note: scorePartwise.part.measure.note, context: context,
+        draw(note: measures[0].note, context: context,
              point: CGPoint(x: 70.0, y: notesYStart + 2.0))
+
         closeLastStaff(context)
     }
 

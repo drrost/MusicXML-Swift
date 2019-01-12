@@ -8,13 +8,19 @@
 
 import Foundation
 
-struct Measure {
+class Measure {
 
     static let xmlTag = "measure"
 
     let number: Int
 
-    var attributes: Attributes!
+    // TODO: Make it clear.
+    // The specification says that a `measure` tag must have 1:1 `attributes`
+    // subelement, but there are a lot of .musicxml files on the Internet
+    // where is an only `attributes` subelement (for the second `measure` element).
+    // So, either the files are not accord the standard or something is wrong the
+    // standard reading.
+    var attributes: Attributes?
 
     var note: Note!
 

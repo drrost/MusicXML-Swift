@@ -14,6 +14,8 @@ class MusicXMLParser: NSObject {
 
     fileprivate var lastElementName = ""
 
+    fileprivate var lastMeasure: Measure!
+
     func parse(_ fileName: String) -> ScorePartwise? {
         let fileUrl = Bundle.main.url(forResource: fileName, withExtension: "")
         guard fileUrl != nil else { return nil }
@@ -45,19 +47,20 @@ extension MusicXMLParser: XMLParserDelegate {
         case Part.xmlTag:
             scorePartwise.part = Part(from: attributeDict)
         case Measure.xmlTag:
-            scorePartwise.part.measure = Measure(from: attributeDict)
+            lastMeasure = Measure(from: attributeDict)
+            scorePartwise.part.measures.append(lastMeasure)
         case Attributes.xmlTag:
-            scorePartwise.part.measure.attributes = Attributes()
+            lastMeasure.attributes = Attributes()
         case Key.xmlTag:
-            scorePartwise.part.measure.attributes.key = Key()
+            lastMeasure.attributes?.key = Key()
         case Time.xmlTag:
-            scorePartwise.part.measure.attributes.time = Time()
+            lastMeasure.attributes?.time = Time()
         case Clef.xmlTag:
-            scorePartwise.part.measure.attributes.clef = Clef()
+            lastMeasure.attributes?.clef = Clef()
         case Note.xmlTag:
-            scorePartwise.part.measure.note = Note()
+            lastMeasure.note = Note()
         case Pitch.xmlTag:
-            scorePartwise.part.measure.note.pitch = Pitch()
+            lastMeasure.note.pitch = Pitch()
         default:
             break
         }
@@ -75,25 +78,25 @@ extension MusicXMLParser: XMLParserDelegate {
         case PartName.xmlTag:
             scorePartwise.partList.scorePart.partName.partNameText = string
         case Attributes.xmlDivisionsTag:
-            scorePartwise.part.measure.attributes.divisions = Int(string)
+            lastMeasure.attributes?.divisions = Int(string)
         case Attributes.xmlFifthsTag:
-            scorePartwise.part.measure.attributes.key.fifths = Int(string)
+            lastMeasure.attributes?.key.fifths = Int(string)
         case Time.xmlBeatsTag:
-            scorePartwise.part.measure.attributes.time.beats = string
+            lastMeasure.attributes?.time.beats = string
         case Time.xmlBeatTypeTag:
-            scorePartwise.part.measure.attributes.time.beatType = string
+            lastMeasure.attributes?.time.beatType = string
         case Clef.xmlSignTag:
-            scorePartwise.part.measure.attributes.clef?.sign = Clef.Sign(rawValue: string)
+            lastMeasure.attributes?.clef?.sign = Clef.Sign(rawValue: string)
         case Clef.xmlLineTag:
-            scorePartwise.part.measure.attributes.clef?.line = Int(string)
+            lastMeasure.attributes?.clef?.line = Int(string)
         case Note.xmlDurationTag:
-            scorePartwise.part.measure.note.duration = UInt(string)
+            lastMeasure.note.duration = UInt(string)
         case Note.xmlTypeTag:
-            scorePartwise.part.measure.note.type = NoteType(rawValue: string)
+            lastMeasure.note.type = NoteType(rawValue: string)
         case Pitch.xmlStepTag:
-            scorePartwise.part.measure.note.pitch.step = Step(rawValue: string)
+            lastMeasure.note.pitch.step = Step(rawValue: string)
         case Pitch.xmlOctaveTag:
-            scorePartwise.part.measure.note.pitch.octave = UInt(string)
+            lastMeasure.note.pitch.octave = UInt(string)
         default:
             break
         }

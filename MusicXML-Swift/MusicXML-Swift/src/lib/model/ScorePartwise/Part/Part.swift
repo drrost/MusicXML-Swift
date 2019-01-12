@@ -14,7 +14,7 @@ struct Part {
 
     var id: String!
 
-    var measure: Measure!
+    var measures = [Measure]()
 
     init(from dictionary: [String: String]) {
         if let id = dictionary["id"] {

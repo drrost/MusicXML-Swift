@@ -21,21 +21,22 @@ class MusicXMLSwiftTests: XCTestCase {
             return
         }
 
+        let measure = score.part.measures[0]
         XCTAssertTrue(score.partList.scorePart.partName.partNameText == "Music")
         XCTAssertTrue(score.part.id == "P1")
-        XCTAssertTrue(score.part.measure.number == 1)
+        XCTAssertTrue(measure.number == 1)
 
-        XCTAssertTrue(score.part.measure.attributes.divisions == 1)
-        XCTAssertTrue(score.part.measure.attributes.key.fifths == 0)
-        XCTAssertTrue(score.part.measure.attributes.time.beats == "4")
-        XCTAssertTrue(score.part.measure.attributes.time.beatType == "4")
-        XCTAssertTrue(score.part.measure.attributes.clef?.sign == .G)
-        XCTAssertTrue(score.part.measure.attributes.clef?.line == 2)
+        XCTAssertTrue(measure.attributes?.divisions == 1)
+        XCTAssertTrue(measure.attributes?.key.fifths == 0)
+        XCTAssertTrue(measure.attributes?.time.beats == "4")
+        XCTAssertTrue(measure.attributes?.time.beatType == "4")
+        XCTAssertTrue(measure.attributes?.clef?.sign == .G)
+        XCTAssertTrue(measure.attributes?.clef?.line == 2)
 
-        XCTAssertTrue(score.part.measure.note.pitch.step == .C)
-        XCTAssertTrue(score.part.measure.note.pitch.octave == 4)
-        XCTAssertTrue(score.part.measure.note.duration == 4)
-        XCTAssertTrue(score.part.measure.note.type == .whole)
+        XCTAssertTrue(measure.note.pitch.step == .C)
+        XCTAssertTrue(measure.note.pitch.octave == 4)
+        XCTAssertTrue(measure.note.duration == 4)
+        XCTAssertTrue(measure.note.type == .whole)
     }
 
     func testHelloWorldRepresentation() {
@@ -57,6 +58,26 @@ class MusicXMLSwiftTests: XCTestCase {
             return
         }
 
+        XCTAssertTrue(score.partList.scorePart.partName.partNameText == "Piano")
+        XCTAssertTrue(score.part.id == "P1")
+        XCTAssertTrue(score.part.measures.count == 2)
+
+        // Check measure 1
+        var measure = score.part.measures[0]
+        XCTAssertTrue(score.partList.scorePart.partName.partNameText == "Piano")
+        XCTAssertTrue(score.part.id == "P1")
+        XCTAssertTrue(measure.number == 1)
+
+        XCTAssertTrue(measure.attributes?.divisions == 1)
+        XCTAssertTrue(measure.attributes?.key.fifths == 0)
+        XCTAssertTrue(measure.attributes?.time.beats == "4")
+        XCTAssertTrue(measure.attributes?.time.beatType == "4")
+        XCTAssertTrue(measure.attributes?.clef?.sign == .G)
+        XCTAssertTrue(measure.attributes?.clef?.line == 2)
+
+        // Check measure 2
+        measure = score.part.measures[1]
+        XCTAssertTrue(measure.number == 2)
     }
 
 }
