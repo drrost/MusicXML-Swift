@@ -33,10 +33,12 @@ class MusicXMLSwiftTests: XCTestCase {
         XCTAssertTrue(measure.attributes?.clef?.sign == .G)
         XCTAssertTrue(measure.attributes?.clef?.line == 2)
 
-        XCTAssertTrue(measure.note.pitch.step == .C)
-        XCTAssertTrue(measure.note.pitch.octave == 4)
-        XCTAssertTrue(measure.note.duration == 4)
-        XCTAssertTrue(measure.note.type == .whole)
+        XCTAssertTrue(measure.notes.count == 1)
+        let note = measure.notes[0]
+        XCTAssertTrue(note.pitch.step == .C)
+        XCTAssertTrue(note.pitch.octave == 4)
+        XCTAssertTrue(note.duration == 4)
+        XCTAssertTrue(note.type == .whole)
     }
 
     func testHelloWorldRepresentation() {
@@ -74,6 +76,14 @@ class MusicXMLSwiftTests: XCTestCase {
         XCTAssertTrue(measure.attributes?.time.beatType == "4")
         XCTAssertTrue(measure.attributes?.clef?.sign == .G)
         XCTAssertTrue(measure.attributes?.clef?.line == 2)
+
+        XCTAssertTrue(measure.notes.count == 4)
+        let note = measure.notes[0]
+        XCTAssertTrue(note.pitch.step == .C)
+        XCTAssertTrue(note.pitch.octave == 4)
+        XCTAssertTrue(note.duration == 1)
+        XCTAssertTrue(note.voice == "1")
+        XCTAssertTrue(note.type == .quarter)
 
         // Check measure 2
         measure = score.part.measures[1]

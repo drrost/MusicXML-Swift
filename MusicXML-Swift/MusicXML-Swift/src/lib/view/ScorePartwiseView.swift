@@ -51,7 +51,7 @@ class ScorePartwiseView: UIView {
         }
 
         let notesYStart = kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace
-        draw(note: measures[0].note, context: context,
+        draw(note: measures[0].notes[0], context: context,
              point: CGPoint(x: 70.0, y: notesYStart + 2.0))
 
         closeLastStaff(context)

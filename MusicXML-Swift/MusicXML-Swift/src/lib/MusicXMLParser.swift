@@ -16,6 +16,8 @@ class MusicXMLParser: NSObject {
 
     fileprivate var lastMeasure: Measure!
 
+    fileprivate var lastNote: Note!
+
     func parse(_ fileName: String) -> ScorePartwise? {
         let fileUrl = Bundle.main.url(forResource: fileName, withExtension: "")
         guard fileUrl != nil else { return nil }
@@ -58,9 +60,10 @@ extension MusicXMLParser: XMLParserDelegate {
         case Clef.xmlTag:
             lastMeasure.attributes?.clef = Clef()
         case Note.xmlTag:
-            lastMeasure.note = Note()
+            lastNote = Note()
+            lastMeasure.notes.append(lastNote)
         case Pitch.xmlTag:
-            lastMeasure.note.pitch = Pitch()
+            lastNote.pitch = Pitch()
         default:
             break
         }
@@ -90,13 +93,15 @@ extension MusicXMLParser: XMLParserDelegate {
         case Clef.xmlLineTag:
             lastMeasure.attributes?.clef?.line = Int(string)
         case Note.xmlDurationTag:
-            lastMeasure.note.duration = UInt(string)
+            lastNote.duration = UInt(string)
+        case Note.xmlVoiceTag:
+            lastNote.voice = string
         case Note.xmlTypeTag:
-            lastMeasure.note.type = NoteType(rawValue: string)
+            lastNote.type = NoteType(rawValue: string)
         case Pitch.xmlStepTag:
-            lastMeasure.note.pitch.step = Step(rawValue: string)
+            lastNote.pitch.step = Step(rawValue: string)
         case Pitch.xmlOctaveTag:
-            lastMeasure.note.pitch.octave = UInt(string)
+            lastNote.pitch.octave = UInt(string)
         default:
             break
         }

@@ -22,7 +22,7 @@ class Measure {
     // standard reading.
     var attributes: Attributes?
 
-    var note: Note!
+    var notes = [Note]()
 
     init(from dictionary: [String: String]) {
         if let numberString = dictionary["number"] {

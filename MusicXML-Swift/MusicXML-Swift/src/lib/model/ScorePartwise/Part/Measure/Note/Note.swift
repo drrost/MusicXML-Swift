@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Note {
+class Note {
 
     static let xmlTag = "note"
 
@@ -18,9 +18,13 @@ struct Note {
 
     static let xmlTypeTag = "type"
 
+    static let xmlVoiceTag = "voice"
+
     var pitch: Pitch!
 
     var duration: UInt!
 
     var type: NoteType!
+
+    var voice: String?
 }
