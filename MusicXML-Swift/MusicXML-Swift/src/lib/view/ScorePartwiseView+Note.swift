@@ -43,13 +43,13 @@ extension ScorePartwiseView {
     fileprivate func draw(note: Note, context: CGContext) {
 
         context.saveGState()
-        context.translateBy(x: 0.0, y: shiftForNote(note))
+        context.translateBy(x: 0.0, y: shiftForNote(note.pitch))
 
         switch note.type {
         case .whole?:
             drawWhole()
         case .quarter?:
-            drawQuater(context: context)
+            drawQuater(context: context, shoulStemDown: shoulStemDown(note.pitch))
         default:
             print("")
         }
@@ -57,10 +57,10 @@ extension ScorePartwiseView {
         context.restoreGState()
     }
 
-    fileprivate func shiftForNote(_ note: Note) -> CGFloat {
+    fileprivate func shiftForNote(_ pitch: Pitch) -> CGFloat {
 
         let kStaffSpaceHalf = kStaffSpace / 2.0
-        switch (note.pitch.step, note.pitch.octave) {
+        switch (pitch.step, pitch.octave) {
         case (.C?, 4):
             return kStaffSpaceHalf * 2.0 - 1 // 8.0
         case (.D?, 4):
@@ -79,6 +79,15 @@ extension ScorePartwiseView {
             return -kStaffSpaceHalf * 6.0 + 3.5
         default:
             return 0.0
+        }
+    }
+
+    fileprivate func shoulStemDown(_ pitch: Pitch) -> Bool {
+        switch (pitch.step, pitch.octave) {
+        case (.B?, 4), (.C?, 5):
+            return true
+        default:
+            return false
         }
     }
 
@@ -125,7 +134,7 @@ extension ScorePartwiseView {
 
     static var a: Int = 0
 
-    fileprivate func drawQuater(context: CGContext) {
+    fileprivate func drawQuater(context: CGContext, shoulStemDown: Bool = false) {
 
         ScorePartwiseView.a += 1
         context.saveGState()
@@ -138,8 +147,15 @@ extension ScorePartwiseView {
         context.restoreGState()
 
         let stemPath = UIBezierPath()
-        stemPath.move(to: CGPoint(x: 10.0, y: 0.0))
-        stemPath.addLine(to: CGPoint(x: 10.0, y: -28.0))
+
+        if shoulStemDown == true {
+            stemPath.move(to: CGPoint(x: 2.0, y: 2.0))
+            stemPath.addLine(to: CGPoint(x: 2.0, y: 28.0))
+        } else {
+            stemPath.move(to: CGPoint(x: 10.0, y: 0.0))
+            stemPath.addLine(to: CGPoint(x: 10.0, y: -28.0))
+        }
+
         stemPath.lineWidth = ScorePartwiseView.kLineWidth
         stemPath.stroke()
     }
