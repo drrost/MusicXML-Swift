@@ -52,10 +52,7 @@ class ScorePartwiseView: UIView {
                  point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
         }
 
-        let point = CGPoint(
-            x: 70.0, y: kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace)
-        draw(measure: measures[0], context: context, startPoint: point)
-
+        draw(measures, context)
         closeLastStaff(context)
     }
 
@@ -91,6 +88,15 @@ class ScorePartwiseView: UIView {
             context.move(to: CGPoint(x: kStaffSideOffset, y: y))
             context.addLine(to: CGPoint(x: frame.size.width - kStaffSideOffset, y: y))
             context.drawPath(using: .fillStroke)
+        }
+    }
+
+    fileprivate func draw(_ measures: [Measure], _ context: CGContext) {
+        var point = CGPoint(
+            x: 70.0, y: kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace)
+        for measure in measures {
+            let lastX = draw(measure: measure, context: context, startPoint: point)
+            point.x = lastX + 60.0
         }
     }
 
