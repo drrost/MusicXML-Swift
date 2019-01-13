@@ -8,16 +8,18 @@
 
 import UIKit
 
+let kStaffSpace: CGFloat = 9.0
+let kStaffLineWidth: CGFloat = 1.0
+let kDistanceBetweenNotesY: CGFloat = (kStaffSpace + kStaffLineWidth ) / 2.0
+let kStaffTopOffset: CGFloat = 30.0
+let kStaffSideOffset: CGFloat = 10.0
+let kLinesNumber: Int = 5
+
 class ScorePartwiseView: UIView {
 
     fileprivate var scorePartwise: ScorePartwise!
 
     fileprivate let color = UIColor.black
-    let kStaffSpace: CGFloat = 10.0
-    let kStaffLineWidth: CGFloat = 1.0
-    let kStaffTopOffset: CGFloat = 30.0
-    let kStaffSideOffset: CGFloat = 10.0
-    let kLinesNumber: Int = 5
 
     // MARK: - Public API
 
@@ -41,7 +43,7 @@ class ScorePartwiseView: UIView {
         if let attributes = measures[0].attributes {
             if let clef = attributes.clef {
                 let kClefSideOffset: CGFloat = 15.0
-                draw(clef: clef, context, scale: 1.4,
+                draw(clef: clef, context,
                      point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
             }
 
@@ -50,7 +52,9 @@ class ScorePartwiseView: UIView {
                  point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
         }
 
-        draw(measure: measures[0], context: context)
+        let point = CGPoint(
+            x: 70.0, y: kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace)
+        draw(measure: measures[0], context: context, startPoint: point)
 
         closeLastStaff(context)
     }

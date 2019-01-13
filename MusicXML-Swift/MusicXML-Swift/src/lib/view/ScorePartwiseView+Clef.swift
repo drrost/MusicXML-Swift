@@ -10,14 +10,14 @@ import UIKit
 
 extension ScorePartwiseView {
 
-    func draw(clef: Clef, _ context: CGContext, scale: CGFloat = 1.0,
+    func draw(clef: Clef, _ context: CGContext,
               point: CGPoint = CGPoint(x: 0.0, y: 0.0)) {
 
         context.saveGState()
         context.translateBy(x: point.x, y: point.y)
 
         shift(to: clef.line, context)
-        drawGClef(scale, context)
+        drawGClef(context)
 
         context.restoreGState()
     }
@@ -28,8 +28,9 @@ extension ScorePartwiseView {
         context.translateBy(x: 0.0, y: CGFloat(defaultLine - line) * kStaffSpace)
     }
 
-    fileprivate func drawGClef(_ scale: CGFloat, _ context: CGContext) {
+    fileprivate func drawGClef(_ context: CGContext) {
 
+        let scale: CGFloat = 1.3
         context.scaleBy(x: scale, y: scale)
 
         let path = UIBezierPath()

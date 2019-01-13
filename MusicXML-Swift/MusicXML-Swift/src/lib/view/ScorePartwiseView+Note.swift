@@ -13,14 +13,12 @@ extension ScorePartwiseView {
     static let kFillColor = UIColor.black
     static let kLineWidth: CGFloat = 1.5
 
-    func draw(note: Note, context: CGContext, point: CGPoint, scale: CGFloat = 1) {
+    func draw(note: Note, context: CGContext, point: CGPoint) {
 
         context.saveGState()
         context.translateBy(x: point.x, y: point.y)
 
         drawDashIfNecessary(note: note, context: context)
-
-        context.scaleBy(x: scale, y: scale)
 
         draw(note: note, context: context)
 
@@ -30,8 +28,8 @@ extension ScorePartwiseView {
     fileprivate func drawDashIfNecessary(note: Note, context: CGContext) {
         if note.pitch.step == .C && note.pitch.octave == 4 {
             let dashXStartOffset: CGFloat = 3.0
-            let dashLength: CGFloat = 26.0
-            let dashYStartOfset: CGFloat = 8.0
+            let dashLength: CGFloat = 19.0
+            let dashYStartOfset: CGFloat = kStaffSpace
 
             let dashY: CGFloat = dashYStartOfset
             context.move(to: CGPoint(x: -dashXStartOffset, y: dashY))
@@ -44,7 +42,7 @@ extension ScorePartwiseView {
 
     fileprivate func draw(note: Note, context: CGContext) {
         context.saveGState()
-        context.translateBy(x: 0.0, y: 2.0 + shiftForNote(note))
+        context.translateBy(x: 0.0, y: shiftForNote(note))
 
         switch note.type {
         case .whole?:
@@ -60,16 +58,15 @@ extension ScorePartwiseView {
 
     fileprivate func shiftForNote(_ note: Note) -> CGFloat {
 
-        let kDistanceBetweenNotesY: CGFloat = -5.0
         switch (note.pitch.step, note.pitch.octave) {
         case (.C?, 4):
-            return 0.0
+            return 8.0
         case (.D?, 4):
-            return kDistanceBetweenNotesY
+            return 3.5
         case (.E?, 4):
-            return kDistanceBetweenNotesY * 2.0
+            return -1.0
         case (.F?, 4):
-            return kDistanceBetweenNotesY * 3.0
+            return -5.5
         default:
             return 0.0
         }
@@ -121,14 +118,15 @@ extension ScorePartwiseView {
         context.saveGState()
         context.rotate(by: -24.35 * CGFloat.pi/180)
 
-        let noteHeadPath = UIBezierPath(ovalIn: CGRect(x: -1.0, y: 5.5, width: 15.3, height: 8.0))
+        let noteHeadPath = UIBezierPath(
+            ovalIn: CGRect(x: 0.0, y: 0.0, width: 10.0, height: 7.0))
         ScorePartwiseView.kFillColor.setFill()
         noteHeadPath.fill()
         context.restoreGState()
 
         let stemPath = UIBezierPath()
-        stemPath.move(to: CGPoint(x: 16.0, y: 5.42))
-        stemPath.addLine(to: CGPoint(x: 16.0, y: -28.17))
+        stemPath.move(to: CGPoint(x: 10.0, y: 0.0))
+        stemPath.addLine(to: CGPoint(x: 10.0, y: -28.0))
         stemPath.lineWidth = ScorePartwiseView.kLineWidth
         stemPath.miterLimit = 4
         stemPath.stroke()

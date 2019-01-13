@@ -12,13 +12,24 @@ private let kDistanceBetweenNotes: CGFloat = 40.0
 
 extension ScorePartwiseView {
 
-    func draw(measure: Measure, context: CGContext) {
-        var noteXStart: CGFloat = 70.0
-        let notesYStart = kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace
+    func draw(measure: Measure, context: CGContext, startPoint: CGPoint) {
+//        debugDrawCircle(startPoint, context)
+        debugDrawPoint(startPoint, context)
+        var lastPoint = CGPoint()
+        var noteXStart: CGFloat = 0.0
         for note in measure.notes {
-            draw(note: note, context: context,
-                 point: CGPoint(x: noteXStart, y: notesYStart + 2.0))
+            lastPoint = CGPoint(x: startPoint.x + noteXStart, y: startPoint.y)
+            draw(note: note, context: context, point: lastPoint)
             noteXStart += kDistanceBetweenNotes
         }
+        drawClose(context, lastPoint)
+    }
+
+    fileprivate func drawClose(_ context: CGContext, _ lastPoint: CGPoint) {
+        var point = CGPoint(x: lastPoint.x + kDistanceBetweenNotes,
+                            y: lastPoint.y)
+        context.move(to: point)
+        point.y = lastPoint.y - kStaffSpace * CGFloat(kLinesNumber - 1)
+        context.addLine(to: point)
     }
 }

@@ -20,10 +20,10 @@ extension ScorePartwiseView {
 
         translate(context: context)
 
-        context.translateBy(x: 0.0, y: 3.0)
+        context.translateBy(x: 0.0, y: 4.5)
         draw(text: time.beats, context: context)
 
-        context.translateBy(x: 0.0, y: -20.0)
+        context.translateBy(x: 0.0, y: -18.0)
         draw(text: time.beatType, context: context)
 
         context.restoreGState()

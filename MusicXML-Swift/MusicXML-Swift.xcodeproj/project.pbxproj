@@ -36,6 +36,7 @@
 		11BABCC321E37B2000642D46 /* ScorePartwiseView+Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */; };
 		11BABCC521E38BA300642D46 /* ScorePartwiseView+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */; };
 		11F8140821EA3695005CC56E /* ScorePartwiseView+Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */; };
+		11F8140A21EB9698005CC56E /* ScorePartwiseView+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140921EB9698005CC56E /* ScorePartwiseView+Debug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Note.swift"; sourceTree = "<group>"; };
 		11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Time.swift"; sourceTree = "<group>"; };
 		11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Measure.swift"; sourceTree = "<group>"; };
+		11F8140921EB9698005CC56E /* ScorePartwiseView+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Debug.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +313,7 @@
 				11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */,
 				11BABCC221E37B2000642D46 /* ScorePartwiseView+Note.swift */,
 				11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */,
+				11F8140921EB9698005CC56E /* ScorePartwiseView+Debug.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				11BABC8D21E1496C00642D46 /* Part.swift in Sources */,
 				11BABC6321E141E600642D46 /* ViewController.swift in Sources */,
 				11BABC8A21E1494100642D46 /* MusicXMLParser.swift in Sources */,
+				11F8140A21EB9698005CC56E /* ScorePartwiseView+Debug.swift in Sources */,
 				11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */,
 				11BABCB221E227DC00642D46 /* Pitch.swift in Sources */,
 				11BABCC521E38BA300642D46 /* ScorePartwiseView+Time.swift in Sources */,
