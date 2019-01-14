@@ -26,6 +26,7 @@ extension ScorePartwiseView {
     }
 
     fileprivate func drawDashIfNecessary(note: Note, context: CGContext) {
+        guard note.isRest == false else { return }
         if note.pitch.step == .C && note.pitch.octave == 4 {
             let dashXStartOffset: CGFloat = 3.0
             let dashLength: CGFloat = 19.0
@@ -42,8 +43,10 @@ extension ScorePartwiseView {
 
     fileprivate func draw(note: Note, context: CGContext) {
 
+        guard note.isRest == false else { return }
+
         context.saveGState()
-        context.translateBy(x: 0.0, y: shiftForNote(note.pitch))
+        context.translateBy(x: 0.0, y: shiftForNote(note))
 
         switch note.type {
         case .whole?:
@@ -57,10 +60,12 @@ extension ScorePartwiseView {
         context.restoreGState()
     }
 
-    fileprivate func shiftForNote(_ pitch: Pitch) -> CGFloat {
+    fileprivate func shiftForNote(_ note: Note) -> CGFloat {
+
+        guard note.isRest == false else { return 0.0 }
 
         let kStaffSpaceHalf = kStaffSpace / 2.0
-        switch (pitch.step, pitch.octave) {
+        switch (note.pitch.step, note.pitch.octave) {
         case (.C?, 4):
             return kStaffSpaceHalf * 2.0 - 1 // 8.0
         case (.D?, 4):

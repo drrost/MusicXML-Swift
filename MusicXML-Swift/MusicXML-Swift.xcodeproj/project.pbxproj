@@ -39,6 +39,8 @@
 		11F8140C21ECA094005CC56E /* 05_long_ago.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11F8140B21ECA094005CC56E /* 05_long_ago.xml */; };
 		11F8140E21ECA0C3005CC56E /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140D21ECA0C3005CC56E /* HelloWorldTests.swift */; };
 		11F8141021ECA11F005CC56E /* C-durTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140F21ECA11F005CC56E /* C-durTests.swift */; };
+		11F8141221ECA185005CC56E /* LongAgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8141121ECA185005CC56E /* LongAgoTests.swift */; };
+		11F8141421ECA1E2005CC56E /* 05_long_ago.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11F8140B21ECA094005CC56E /* 05_long_ago.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,7 @@
 		11F8140B21ECA094005CC56E /* 05_long_ago.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 05_long_ago.xml; sourceTree = "<group>"; };
 		11F8140D21ECA0C3005CC56E /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
 		11F8140F21ECA11F005CC56E /* C-durTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C-durTests.swift"; sourceTree = "<group>"; };
+		11F8141121ECA185005CC56E /* LongAgoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAgoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 				11F8140D21ECA0C3005CC56E /* HelloWorldTests.swift */,
 				11F8140F21ECA11F005CC56E /* C-durTests.swift */,
 				11BABC7721E141E700642D46 /* Info.plist */,
+				11F8141121ECA185005CC56E /* LongAgoTests.swift */,
 			);
 			path = "MusicXML-SwiftTests";
 			sourceTree = "<group>";
@@ -406,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F8141421ECA1E2005CC56E /* 05_long_ago.xml in Resources */,
 				11BABC6B21E141E700642D46 /* LaunchScreen.storyboard in Resources */,
 				1166558C21E9F19B00E886BA /* C-dur.xml in Resources */,
 				11BABC9621E14DE300642D46 /* HelloWorld.xml in Resources */,
@@ -480,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F8141221ECA185005CC56E /* LongAgoTests.swift in Sources */,
 				11F8141021ECA11F005CC56E /* C-durTests.swift in Sources */,
 				11F8140E21ECA0C3005CC56E /* HelloWorldTests.swift in Sources */,
 			);

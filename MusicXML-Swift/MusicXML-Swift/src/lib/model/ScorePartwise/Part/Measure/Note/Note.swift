@@ -14,6 +14,8 @@ class Note {
 
     static let xmPitchTag = "pitch"
 
+    static let xmlRestTag = "rest"
+
     static let xmlDurationTag = "duration"
 
     static let xmlTypeTag = "type"
@@ -27,4 +29,6 @@ class Note {
     var type: NoteType!
 
     var voice: String?
+
+    var isRest: Bool = false
 }

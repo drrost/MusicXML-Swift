@@ -73,6 +73,12 @@ extension MusicXMLParser: XMLParserDelegate {
 
     func parser(_ parser: XMLParser, didEndElement elementName: String,
                 namespaceURI: String?, qualifiedName qName: String?) {
+        switch elementName {
+        case Note.xmlRestTag:
+            lastNote.isRest = true
+        default:
+            break
+        }
         lastElementName = ""
     }
 
