@@ -20,7 +20,7 @@
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rOY-9l-PYe" customClass="ScorePartwiseView" customModule="MusicXML_Swift" customModuleProvider="target">
                                 <rect key="frame" x="16" y="50" width="343" height="90"/>
-                                <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="xzb-sJ-alh"/>
                                 </constraints>

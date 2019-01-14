@@ -14,7 +14,6 @@
 		11BABC6621E141E600642D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BABC6421E141E600642D46 /* Main.storyboard */; };
 		11BABC6821E141E700642D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BABC6721E141E700642D46 /* Assets.xcassets */; };
 		11BABC6B21E141E700642D46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BABC6921E141E700642D46 /* LaunchScreen.storyboard */; };
-		11BABC7621E141E700642D46 /* MusicXML_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC7521E141E700642D46 /* MusicXML_SwiftTests.swift */; };
 		11BABC8A21E1494100642D46 /* MusicXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC8921E1494100642D46 /* MusicXMLParser.swift */; };
 		11BABC8D21E1496C00642D46 /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC8C21E1496C00642D46 /* Part.swift */; };
 		11BABC8F21E1497E00642D46 /* PartList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC8E21E1497E00642D46 /* PartList.swift */; };
@@ -37,6 +36,9 @@
 		11BABCC521E38BA300642D46 /* ScorePartwiseView+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */; };
 		11F8140821EA3695005CC56E /* ScorePartwiseView+Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */; };
 		11F8140A21EB9698005CC56E /* ScorePartwiseView+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140921EB9698005CC56E /* ScorePartwiseView+Debug.swift */; };
+		11F8140C21ECA094005CC56E /* 05_long_ago.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11F8140B21ECA094005CC56E /* 05_long_ago.xml */; };
+		11F8140E21ECA0C3005CC56E /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140D21ECA0C3005CC56E /* HelloWorldTests.swift */; };
+		11F8141021ECA11F005CC56E /* C-durTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140F21ECA11F005CC56E /* C-durTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,6 @@
 		11BABC6A21E141E700642D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11BABC6C21E141E700642D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BABC7121E141E700642D46 /* MusicXML-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicXML-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		11BABC7521E141E700642D46 /* MusicXML_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicXML_SwiftTests.swift; sourceTree = "<group>"; };
 		11BABC7721E141E700642D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BABC8621E148EB00642D46 /* HelloWorld.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HelloWorld.xml; sourceTree = "<group>"; };
 		11BABC8921E1494100642D46 /* MusicXMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicXMLParser.swift; sourceTree = "<group>"; };
@@ -83,6 +84,9 @@
 		11BABCC421E38BA300642D46 /* ScorePartwiseView+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Time.swift"; sourceTree = "<group>"; };
 		11F8140721EA3695005CC56E /* ScorePartwiseView+Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Measure.swift"; sourceTree = "<group>"; };
 		11F8140921EB9698005CC56E /* ScorePartwiseView+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScorePartwiseView+Debug.swift"; sourceTree = "<group>"; };
+		11F8140B21ECA094005CC56E /* 05_long_ago.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 05_long_ago.xml; sourceTree = "<group>"; };
+		11F8140D21ECA0C3005CC56E /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
+		11F8140F21ECA11F005CC56E /* C-durTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C-durTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				11BABC8521E148EB00642D46 /* res */,
-				11BABC7521E141E700642D46 /* MusicXML_SwiftTests.swift */,
+				11F8140D21ECA0C3005CC56E /* HelloWorldTests.swift */,
+				11F8140F21ECA11F005CC56E /* C-durTests.swift */,
 				11BABC7721E141E700642D46 /* Info.plist */,
 			);
 			path = "MusicXML-SwiftTests";
@@ -164,6 +169,7 @@
 		11BABC8521E148EB00642D46 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				11F8140B21ECA094005CC56E /* 05_long_ago.xml */,
 				1166558A21E9F0C200E886BA /* C-dur.xml */,
 				11BABC8621E148EB00642D46 /* HelloWorld.xml */,
 			);
@@ -412,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F8140C21ECA094005CC56E /* 05_long_ago.xml in Resources */,
 				1166558B21E9F0C200E886BA /* C-dur.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,7 +480,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BABC7621E141E700642D46 /* MusicXML_SwiftTests.swift in Sources */,
+				11F8141021ECA11F005CC56E /* C-durTests.swift in Sources */,
+				11F8140E21ECA0C3005CC56E /* HelloWorldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
