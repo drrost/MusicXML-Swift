@@ -41,6 +41,7 @@
 		11F8141021ECA11F005CC56E /* C-durTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8140F21ECA11F005CC56E /* C-durTests.swift */; };
 		11F8141221ECA185005CC56E /* LongAgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8141121ECA185005CC56E /* LongAgoTests.swift */; };
 		11F8141421ECA1E2005CC56E /* 05_long_ago.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11F8140B21ECA094005CC56E /* 05_long_ago.xml */; };
+		11F8141B21ECAD7C005CC56E /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8141A21ECAD7C005CC56E /* Beam.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		11F8140D21ECA0C3005CC56E /* HelloWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldTests.swift; sourceTree = "<group>"; };
 		11F8140F21ECA11F005CC56E /* C-durTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C-durTests.swift"; sourceTree = "<group>"; };
 		11F8141121ECA185005CC56E /* LongAgoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongAgoTests.swift; sourceTree = "<group>"; };
+		11F8141A21ECAD7C005CC56E /* Beam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beam.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,7 @@
 		11BABCAB21E2272000642D46 /* Note */ = {
 			isa = PBXGroup;
 			children = (
+				11F8141821ECAD54005CC56E /* Beam */,
 				11BABCAE21E227C900642D46 /* Pitch */,
 				11BABCAC21E2272800642D46 /* Note.swift */,
 			);
@@ -326,6 +329,14 @@
 				11F8140921EB9698005CC56E /* ScorePartwiseView+Debug.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		11F8141821ECAD54005CC56E /* Beam */ = {
+			isa = PBXGroup;
+			children = (
+				11F8141A21ECAD7C005CC56E /* Beam.swift */,
+			);
+			path = Beam;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +468,7 @@
 			files = (
 				11BABC9E21E21DCE00642D46 /* Time.swift in Sources */,
 				11BABCB821E2295A00642D46 /* NoteType.swift in Sources */,
+				11F8141B21ECAD7C005CC56E /* Beam.swift in Sources */,
 				11BABCBA21E22D2900642D46 /* Step.swift in Sources */,
 				11BABCA021E2224800642D46 /* Clef.swift in Sources */,
 				11BABC9321E1499B00642D46 /* ScorePart.swift in Sources */,

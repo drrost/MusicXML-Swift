@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum Stem: String {
+    case up
+    case down
+}
+
 class Note {
 
     static let xmlTag = "note"
@@ -22,6 +27,8 @@ class Note {
 
     static let xmlVoiceTag = "voice"
 
+    static let xmlStemTag = "stem"
+
     var pitch: Pitch!
 
     var duration: UInt!
@@ -31,4 +38,6 @@ class Note {
     var voice: String?
 
     var isRest: Bool = false
+
+    var stem: Stem?
 }

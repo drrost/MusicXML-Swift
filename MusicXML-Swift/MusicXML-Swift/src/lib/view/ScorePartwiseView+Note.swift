@@ -53,6 +53,8 @@ extension ScorePartwiseView {
             drawWhole()
         case .quarter?:
             drawQuater(context: context, shoulStemDown: shoulStemDown(note.pitch))
+        case .eighth?:
+            drawEighth(context: context, shoulStemDown: shoulStemDown(note.pitch))
         default:
             print("")
         }
@@ -137,11 +139,8 @@ extension ScorePartwiseView {
         noteHeadPath.fill()
     }
 
-    static var a: Int = 0
-
     fileprivate func drawQuater(context: CGContext, shoulStemDown: Bool = false) {
 
-        ScorePartwiseView.a += 1
         context.saveGState()
         context.rotate(by: -24.35 * CGFloat.pi/180)
 
@@ -163,5 +162,31 @@ extension ScorePartwiseView {
 
         stemPath.lineWidth = ScorePartwiseView.kLineWidth
         stemPath.stroke()
+    }
+
+    fileprivate func drawEighth(context: CGContext, shoulStemDown: Bool = false) {
+        // TODO: it's a copy/pasts of the previous method, fetch the code.
+        context.saveGState()
+        context.rotate(by: -24.35 * CGFloat.pi/180)
+
+        let noteHeadPath = UIBezierPath(
+            ovalIn: CGRect(x: 0.0, y: 0.0, width: 10.0, height: 7.0))
+        ScorePartwiseView.kFillColor.setFill()
+        noteHeadPath.fill()
+        context.restoreGState()
+
+        let stemPath = UIBezierPath()
+
+        if shoulStemDown == true {
+            stemPath.move(to: CGPoint(x: 2.0, y: 2.0))
+            stemPath.addLine(to: CGPoint(x: 2.0, y: 28.0))
+        } else {
+            stemPath.move(to: CGPoint(x: 10.0, y: 0.0))
+            stemPath.addLine(to: CGPoint(x: 10.0, y: -28.0))
+        }
+
+        stemPath.lineWidth = ScorePartwiseView.kLineWidth
+        stemPath.stroke()
+
     }
 }

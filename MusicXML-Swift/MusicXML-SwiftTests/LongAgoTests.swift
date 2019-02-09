@@ -23,6 +23,5 @@ class LongAgoTests: XCTestCase {
         XCTAssertTrue(score.partList.scorePart.partName.partNameText == "Clarinet in Bb")
         XCTAssertTrue(score.part.id == "P1")
         XCTAssertTrue(score.part.measures.count == 24)
-
     }
 }
