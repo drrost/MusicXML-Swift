@@ -43,20 +43,29 @@ extension ScorePartwiseView {
 
     fileprivate func draw(note: Note, context: CGContext) {
 
-        guard note.isRest == false else { return }
-
         context.saveGState()
         context.translateBy(x: 0.0, y: shiftForNote(note))
 
-        switch note.type {
-        case .whole?:
-            drawWhole()
-        case .quarter?:
-            drawQuater(context: context, shoulStemDown: shoulStemDown(note.pitch))
-        case .eighth?:
-            drawEighth(context: context, shoulStemDown: shoulStemDown(note.pitch))
-        default:
-            print("")
+        if note.isRest {
+            switch note.type {
+            case .whole?:
+                drawRestWhole(context: context)
+            case .half?:
+                drawRestHalf(context: context)
+            default:
+                print("")
+            }
+        } else {
+            switch note.type {
+            case .whole?:
+                drawWhole()
+            case .quarter?:
+                drawQuater(context: context, shoulStemDown: shoulStemDown(note.pitch))
+            case .eighth?:
+                drawEighth(context: context, shoulStemDown: shoulStemDown(note.pitch))
+            default:
+                print("")
+            }
         }
 
         context.restoreGState()
@@ -187,6 +196,18 @@ extension ScorePartwiseView {
 
         stemPath.lineWidth = ScorePartwiseView.kLineWidth
         stemPath.stroke()
+    }
 
+    // MARK: - Rests
+
+    fileprivate static let kRestHeight = kStaffSpace * 0.6
+
+    fileprivate func drawRestWhole(context: CGContext) {
+        context.fill(CGRect(x: 0.0, y: -kStaffSpace * 3.0, width: 10.0, height: ScorePartwiseView.kRestHeight))
+    }
+
+    fileprivate func drawRestHalf(context: CGContext) {
+        context.fill(CGRect(x: 0.0, y: -kStaffSpace * 3.0 + kStaffSpace * 0.4,
+                            width: 10.0, height: ScorePartwiseView.kRestHeight))
     }
 }
