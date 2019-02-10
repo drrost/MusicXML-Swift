@@ -34,6 +34,22 @@ class RestSimpleTests: XCTestCase {
         checkRest(from: "rest-eighth.xml", .eighth)
     }
 
+    func testFileContainsOne16thRest() {
+        checkRest(from: "rest-16th.xml", ._16th)
+    }
+
+    func testFileContainsOne32ndRest() {
+        checkRest(from: "rest-32nd.xml", ._32nd)
+    }
+
+    func testFileContainsOne64thRest() {
+        checkRest(from: "rest-64th.xml", ._64th)
+    }
+
+    func testFileContainsOne128thRest() {
+        checkRest(from: "rest-128th.xml", ._128th)
+    }
+
     // MARK: - Private
 
     fileprivate func checkRest(from fileName: String, _ noteType: NoteType) {
