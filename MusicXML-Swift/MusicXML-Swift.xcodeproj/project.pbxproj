@@ -12,6 +12,7 @@
 		11262512220ED65200819596 /* rest-whole.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126250E220ED64700819596 /* rest-whole.xml */; };
 		11262513220ED65200819596 /* rest-half.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126250F220ED64700819596 /* rest-half.xml */; };
 		11262517220EFC2400819596 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11262516220EFC2400819596 /* NoteTests.swift */; };
+		1126251A22100E4500819596 /* RestWholeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126251922100E4500819596 /* RestWholeTests.swift */; };
 		1166558B21E9F0C200E886BA /* C-dur.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1166558A21E9F0C200E886BA /* C-dur.xml */; };
 		1166558C21E9F19B00E886BA /* C-dur.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1166558A21E9F0C200E886BA /* C-dur.xml */; };
 		11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6021E141E600642D46 /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		1126250E220ED64700819596 /* rest-whole.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-whole.xml"; sourceTree = "<group>"; };
 		1126250F220ED64700819596 /* rest-half.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-half.xml"; sourceTree = "<group>"; };
 		11262516220EFC2400819596 /* NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
+		1126251922100E4500819596 /* RestWholeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestWholeTests.swift; sourceTree = "<group>"; };
 		1166558A21E9F0C200E886BA /* C-dur.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "C-dur.xml"; sourceTree = "<group>"; };
 		11BABC5D21E141E600642D46 /* MusicXML-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicXML-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BABC6021E141E600642D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		11262514220EFBCE00819596 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				1126251822100E1500819596 /* rest */,
 				11262516220EFC2400819596 /* NoteTests.swift */,
 			);
 			path = model;
@@ -145,6 +148,14 @@
 				11F8141121ECA185005CC56E /* LongAgoTests.swift */,
 			);
 			path = "xml-files";
+			sourceTree = "<group>";
+		};
+		1126251822100E1500819596 /* rest */ = {
+			isa = PBXGroup;
+			children = (
+				1126251922100E4500819596 /* RestWholeTests.swift */,
+			);
+			path = rest;
 			sourceTree = "<group>";
 		};
 		11BABC5321E141E600642D46 = {
@@ -539,6 +550,7 @@
 				11F8141221ECA185005CC56E /* LongAgoTests.swift in Sources */,
 				11F8141021ECA11F005CC56E /* C-durTests.swift in Sources */,
 				11F8140E21ECA0C3005CC56E /* HelloWorldTests.swift in Sources */,
+				1126251A22100E4500819596 /* RestWholeTests.swift in Sources */,
 				11262517220EFC2400819596 /* NoteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
