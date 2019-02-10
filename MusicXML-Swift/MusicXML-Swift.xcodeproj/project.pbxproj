@@ -12,18 +12,19 @@
 		11262512220ED65200819596 /* rest-whole.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126250E220ED64700819596 /* rest-whole.xml */; };
 		11262513220ED65200819596 /* rest-half.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126250F220ED64700819596 /* rest-half.xml */; };
 		11262517220EFC2400819596 /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11262516220EFC2400819596 /* NoteTests.swift */; };
-		1126251A22100E4500819596 /* RestWholeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126251922100E4500819596 /* RestWholeTests.swift */; };
-		1126251C22100FBB00819596 /* RestHalfTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126251B22100FBB00819596 /* RestHalfTests.swift */; };
 		1126251F221010D500819596 /* rest-quarter.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126251D221010D500819596 /* rest-quarter.xml */; };
 		11262520221010D500819596 /* rest-eighth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126251E221010D500819596 /* rest-eighth.xml */; };
 		112625242210144600819596 /* note-whole-division-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 112625222210144600819596 /* note-whole-division-2.xml */; };
 		112625252210144600819596 /* note-whole-division-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 112625232210144600819596 /* note-whole-division-1.xml */; };
 		112625262210158C00819596 /* note-whole-division-1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 112625232210144600819596 /* note-whole-division-1.xml */; };
 		112625272210158C00819596 /* note-whole-division-2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 112625222210144600819596 /* note-whole-division-2.xml */; };
-		1126252B22101AA500819596 /* RestQuarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126252A22101AA500819596 /* RestQuarterTests.swift */; };
 		1126252C22101ADE00819596 /* rest-quarter.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126251D221010D500819596 /* rest-quarter.xml */; };
 		1126252D22101ADE00819596 /* rest-eighth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126251E221010D500819596 /* rest-eighth.xml */; };
-		1126252F22101B2600819596 /* RestEighthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126252E22101B2600819596 /* RestEighthTests.swift */; };
+		1126253322106E1F00819596 /* rest-64th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253022106E1F00819596 /* rest-64th.xml */; };
+		1126253422106E1F00819596 /* rest-16th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253122106E1F00819596 /* rest-16th.xml */; };
+		1126253522106E1F00819596 /* rest-32nd.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253222106E1F00819596 /* rest-32nd.xml */; };
+		1126253722106E2700819596 /* rest-128th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253622106E2700819596 /* rest-128th.xml */; };
+		1126253922106EE700819596 /* RestSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126253822106EE700819596 /* RestSimpleTests.swift */; };
 		1166558B21E9F0C200E886BA /* C-dur.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1166558A21E9F0C200E886BA /* C-dur.xml */; };
 		1166558C21E9F19B00E886BA /* C-dur.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1166558A21E9F0C200E886BA /* C-dur.xml */; };
 		11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6021E141E600642D46 /* AppDelegate.swift */; };
@@ -75,14 +76,15 @@
 		1126250E220ED64700819596 /* rest-whole.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-whole.xml"; sourceTree = "<group>"; };
 		1126250F220ED64700819596 /* rest-half.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-half.xml"; sourceTree = "<group>"; };
 		11262516220EFC2400819596 /* NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
-		1126251922100E4500819596 /* RestWholeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestWholeTests.swift; sourceTree = "<group>"; };
-		1126251B22100FBB00819596 /* RestHalfTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestHalfTests.swift; sourceTree = "<group>"; };
 		1126251D221010D500819596 /* rest-quarter.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-quarter.xml"; sourceTree = "<group>"; };
 		1126251E221010D500819596 /* rest-eighth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-eighth.xml"; sourceTree = "<group>"; };
 		112625222210144600819596 /* note-whole-division-2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "note-whole-division-2.xml"; sourceTree = "<group>"; };
 		112625232210144600819596 /* note-whole-division-1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "note-whole-division-1.xml"; sourceTree = "<group>"; };
-		1126252A22101AA500819596 /* RestQuarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestQuarterTests.swift; sourceTree = "<group>"; };
-		1126252E22101B2600819596 /* RestEighthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestEighthTests.swift; sourceTree = "<group>"; };
+		1126253022106E1F00819596 /* rest-64th.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-64th.xml"; sourceTree = "<group>"; };
+		1126253122106E1F00819596 /* rest-16th.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-16th.xml"; sourceTree = "<group>"; };
+		1126253222106E1F00819596 /* rest-32nd.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-32nd.xml"; sourceTree = "<group>"; };
+		1126253622106E2700819596 /* rest-128th.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-128th.xml"; sourceTree = "<group>"; };
+		1126253822106EE700819596 /* RestSimpleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestSimpleTests.swift; sourceTree = "<group>"; };
 		1166558A21E9F0C200E886BA /* C-dur.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "C-dur.xml"; sourceTree = "<group>"; };
 		11BABC5D21E141E600642D46 /* MusicXML-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicXML-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BABC6021E141E600642D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,10 @@
 				1126250F220ED64700819596 /* rest-half.xml */,
 				1126251D221010D500819596 /* rest-quarter.xml */,
 				1126251E221010D500819596 /* rest-eighth.xml */,
+				1126253122106E1F00819596 /* rest-16th.xml */,
+				1126253222106E1F00819596 /* rest-32nd.xml */,
+				1126253022106E1F00819596 /* rest-64th.xml */,
+				1126253622106E2700819596 /* rest-128th.xml */,
 			);
 			path = rests;
 			sourceTree = "<group>";
@@ -173,10 +179,7 @@
 		1126251822100E1500819596 /* rest */ = {
 			isa = PBXGroup;
 			children = (
-				1126251922100E4500819596 /* RestWholeTests.swift */,
-				1126251B22100FBB00819596 /* RestHalfTests.swift */,
-				1126252A22101AA500819596 /* RestQuarterTests.swift */,
-				1126252E22101B2600819596 /* RestEighthTests.swift */,
+				1126253822106EE700819596 /* RestSimpleTests.swift */,
 			);
 			path = rest;
 			sourceTree = "<group>";
@@ -519,7 +522,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1126253522106E1F00819596 /* rest-32nd.xml in Resources */,
+				1126253322106E1F00819596 /* rest-64th.xml in Resources */,
 				1126251F221010D500819596 /* rest-quarter.xml in Resources */,
+				1126253722106E2700819596 /* rest-128th.xml in Resources */,
+				1126253422106E1F00819596 /* rest-16th.xml in Resources */,
 				112625242210144600819596 /* note-whole-division-2.xml in Resources */,
 				112625252210144600819596 /* note-whole-division-1.xml in Resources */,
 				11262510220ED64700819596 /* rest-whole.xml in Resources */,
@@ -588,13 +595,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1126251C22100FBB00819596 /* RestHalfTests.swift in Sources */,
-				1126252B22101AA500819596 /* RestQuarterTests.swift in Sources */,
-				1126252F22101B2600819596 /* RestEighthTests.swift in Sources */,
+				1126253922106EE700819596 /* RestSimpleTests.swift in Sources */,
 				11F8141221ECA185005CC56E /* LongAgoTests.swift in Sources */,
 				11F8141021ECA11F005CC56E /* C-durTests.swift in Sources */,
 				11F8140E21ECA0C3005CC56E /* HelloWorldTests.swift in Sources */,
-				1126251A22100E4500819596 /* RestWholeTests.swift in Sources */,
 				11262517220EFC2400819596 /* NoteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

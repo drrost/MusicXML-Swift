@@ -17,7 +17,7 @@
     <part id="P1">
         <measure number="1">
             <attributes>
-                <divisions>2</divisions>
+                <divisions>16</divisions>
                 <key>
                     <fifths>0</fifths>
                     <mode>major</mode>
@@ -34,7 +34,7 @@
             <note>
                 <rest/>
                 <duration>1</duration>
-                <type>eighth</type>
+                <type>64th</type>
                 <voice>1</voice>
             </note>
         </measure>
