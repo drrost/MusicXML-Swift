@@ -9,6 +9,7 @@
 import Foundation
 
 enum NoteType: String {
+    case none
     case _1024th = "1024th"
     case _512th = "512th"
     case _256th = "256th"

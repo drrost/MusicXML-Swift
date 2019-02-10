@@ -33,7 +33,19 @@ class Note {
 
     var duration: UInt!
 
-    var type: NoteType!
+    fileprivate var _type = NoteType.none
+
+    var type: NoteType! {
+        get {
+            if _type == .none && duration == 4 {
+                return .whole
+            }
+            return _type
+        }
+        set {
+            _type = newValue
+        }
+    }
 
     var voice: String?
 
