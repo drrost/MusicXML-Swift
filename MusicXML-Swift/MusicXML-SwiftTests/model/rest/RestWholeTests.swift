@@ -26,7 +26,6 @@ class RestWholeTests: XCTestCase {
     fileprivate func measureHasOneWholeRest(_ measure: Measure) {
         XCTAssertTrue(measure.notes[0].type == .whole)
         XCTAssertTrue(measure.notes[0].isRest == true)
-
     }
 
 }
