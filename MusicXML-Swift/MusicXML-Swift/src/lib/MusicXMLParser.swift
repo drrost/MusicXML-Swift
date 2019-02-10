@@ -18,6 +18,8 @@ class MusicXMLParser: NSObject {
 
     fileprivate var lastNote: Note!
 
+    fileprivate var divisions: Int = 1
+
     func parse(_ fileName: String) -> ScorePartwise? {
         let fileUrl = Bundle.main.url(forResource: fileName, withExtension: "")
         guard fileUrl != nil else { return nil }
@@ -39,6 +41,7 @@ extension MusicXMLParser: XMLParserDelegate {
     func parser(_ parser: XMLParser, didStartElement elementName: String,
                 namespaceURI: String?, qualifiedName qName: String?,
                 attributes attributeDict: [String: String] = [:]) {
+        print("element start: \(elementName)")
         switch elementName {
         case PartList.xmlTag:
             scorePartwise.partList = PartList()
@@ -62,6 +65,7 @@ extension MusicXMLParser: XMLParserDelegate {
         case Note.xmlTag:
             lastNote = Note()
             lastMeasure.notes.append(lastNote)
+            lastNote.divisions = divisions
         case Pitch.xmlTag:
             lastNote.pitch = Pitch()
         default:
@@ -73,6 +77,7 @@ extension MusicXMLParser: XMLParserDelegate {
 
     func parser(_ parser: XMLParser, didEndElement elementName: String,
                 namespaceURI: String?, qualifiedName qName: String?) {
+        print("element end: \(elementName)")
         switch elementName {
         case Note.xmlRestTag:
             lastNote.isRest = true
@@ -83,11 +88,13 @@ extension MusicXMLParser: XMLParserDelegate {
     }
 
     func parser(_ parser: XMLParser, foundCharacters string: String) {
+        print("element value: \(string)")
         switch lastElementName {
         case PartName.xmlTag:
             scorePartwise.partList.scorePart.partName.partNameText = string
         case Attributes.xmlDivisionsTag:
             lastMeasure.attributes?.divisions = Int(string)
+            divisions = Int(string) ?? 1
         case Attributes.xmlFifthsTag:
             lastMeasure.attributes?.key.fifths = Int(string)
         case Time.xmlBeatsTag:

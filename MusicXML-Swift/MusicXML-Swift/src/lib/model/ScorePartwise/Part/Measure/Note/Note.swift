@@ -33,12 +33,19 @@ class Note {
 
     var duration: UInt!
 
+    var divisions: Int = 1
+
     fileprivate var _type = NoteType.none
 
     var type: NoteType! {
         get {
-            if _type == .none && duration == 4 {
-                return .whole
+            if _type == .none {
+                if (duration == 4 && divisions == 1) {
+                    return .whole
+                }
+                if (duration == 4 && divisions == 2) {
+                    return .half
+                }
             }
             return _type
         }

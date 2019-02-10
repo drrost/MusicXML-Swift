@@ -23,4 +23,26 @@ class NoteTests: XCTestCase {
         XCTAssertTrue(measure.notes[0].type == .whole)
     }
 
+    func testNoteIsWholeWhenDuration4Divisions1() {
+        let parser = MusicXMLParser()
+        guard let score = parser.parse("note-whole-division-1.xml") else {
+            XCTFail("`ScorePartwise object should not be nil")
+            return
+        }
+
+        let measure = score.part.measures[0]
+        XCTAssertTrue(measure.notes[0].type == .whole)
+    }
+
+    func testNoteIsHalfWhenDuration4Divisions2() {
+        let parser = MusicXMLParser()
+        guard let score = parser.parse("note-whole-division-2.xml") else {
+            XCTFail("`ScorePartwise object should not be nil")
+            return
+        }
+
+        let measure = score.part.measures[0]
+        XCTAssertTrue(measure.notes[0].type == .half)
+    }
+
 }
