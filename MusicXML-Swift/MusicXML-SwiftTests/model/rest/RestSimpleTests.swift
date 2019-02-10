@@ -19,51 +19,31 @@ class RestSimpleTests: XCTestCase {
     }
 
     func testFileContainsTwoWholeRests() {
-        guard let score = parser.parse("rest-whole.xml") else {
-            XCTFail("`ScorePartwise object should not be nil")
-            return
-        }
-
-        measureHasOneWholeRest(score.part.measures[0])
-        measureHasOneWholeRest(score.part.measures[1])
-    }
-
-    fileprivate func measureHasOneWholeRest(_ measure: Measure) {
-        XCTAssertTrue(measure.notes[0].type == .whole)
-        XCTAssertTrue(measure.notes[0].isRest == true)
+        checkRest(from: "rest-whole.xml", .whole)
     }
 
     func testFileContainsOneHalfRest() {
-        guard let score = parser.parse("rest-half.xml") else {
-            XCTFail("`ScorePartwise object should not be nil")
-            return
-        }
-
-        let measure = score.part.measures[0]
-        XCTAssertTrue(measure.notes[0].type == .half)
-        XCTAssertTrue(measure.notes[0].isRest == true)
+        checkRest(from: "rest-half.xml", .half)
     }
 
     func testFileContainsOneQuarterRest() {
-        guard let score = parser.parse("rest-quarter.xml") else {
-            XCTFail("`ScorePartwise object should not be nil")
-            return
-        }
-
-        let measure = score.part.measures[0]
-        XCTAssertTrue(measure.notes[0].type == .quarter)
-        XCTAssertTrue(measure.notes[0].isRest == true)
+        checkRest(from: "rest-quarter.xml", .quarter)
     }
 
     func testFileContainsOneEighthRest() {
-        guard let score = parser.parse("rest-eighth.xml") else {
+        checkRest(from: "rest-eighth.xml", .eighth)
+    }
+
+    // MARK: - Private
+
+    fileprivate func checkRest(from fileName: String, _ noteType: NoteType) {
+        guard let score = parser.parse(fileName) else {
             XCTFail("`ScorePartwise object should not be nil")
             return
         }
 
         let measure = score.part.measures[0]
-        XCTAssertTrue(measure.notes[0].type == .eighth)
+        XCTAssertTrue(measure.notes[0].type == noteType)
         XCTAssertTrue(measure.notes[0].isRest == true)
     }
-
 }
