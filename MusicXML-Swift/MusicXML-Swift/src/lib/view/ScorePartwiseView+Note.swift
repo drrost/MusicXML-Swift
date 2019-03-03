@@ -54,6 +54,8 @@ extension ScorePartwiseView {
                 drawRestHalf(context: context)
             case .quarter?:
                 drawRestQuareter(context: context)
+            case .eighth?:
+                drawRestEighth(context: context)
             default:
                 print("")
             }
