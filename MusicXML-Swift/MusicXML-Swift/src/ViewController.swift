@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scorePartwise = parser.parse("rest-whole.xml") {
+        if let scorePartwise = parser.parse("rest-quarter.xml") {
             scoreView.update(scorePartwise)
         }
     }
