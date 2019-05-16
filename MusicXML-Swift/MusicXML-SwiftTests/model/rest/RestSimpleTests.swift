@@ -50,6 +50,10 @@ class RestSimpleTests: XCTestCase {
         checkRest(from: "rest-128th.xml", ._128th)
     }
 
+    func testFileContainsOne256thRest() {
+        checkRest(from: "rest-256th.xml", ._256th)
+    }
+
     // MARK: - Private
 
     fileprivate func checkRest(from fileName: String, _ noteType: NoteType) {
