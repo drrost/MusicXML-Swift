@@ -34,6 +34,8 @@
 		119875A72270877E0022BBFE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 119875A62270877E0022BBFE /* README.md */; };
 		119875A92270AE030022BBFE /* rest-256th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 119875A82270AE030022BBFE /* rest-256th.xml */; };
 		119875AA2270AEBC0022BBFE /* rest-256th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 119875A82270AE030022BBFE /* rest-256th.xml */; };
+		11AE545D2297CF700059835E /* mimimi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11AE545C2297CF700059835E /* mimimi.xml */; };
+		11AE545E2297CF750059835E /* mimimi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11AE545C2297CF700059835E /* mimimi.xml */; };
 		11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6021E141E600642D46 /* AppDelegate.swift */; };
 		11BABC6321E141E600642D46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6221E141E600642D46 /* ViewController.swift */; };
 		11BABC6621E141E600642D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BABC6421E141E600642D46 /* Main.storyboard */; };
@@ -95,6 +97,7 @@
 		1166558A21E9F0C200E886BA /* C-dur.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "C-dur.xml"; sourceTree = "<group>"; };
 		119875A62270877E0022BBFE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		119875A82270AE030022BBFE /* rest-256th.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-256th.xml"; sourceTree = "<group>"; };
+		11AE545C2297CF700059835E /* mimimi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mimimi.xml; sourceTree = "<group>"; };
 		11BABC5D21E141E600642D46 /* MusicXML-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicXML-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BABC6021E141E600642D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BABC6221E141E600642D46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +206,14 @@
 			path = notes;
 			sourceTree = "<group>";
 		};
+		11AE545B2297CF3D0059835E /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				11AE545C2297CF700059835E /* mimimi.xml */,
+			);
+			path = samples;
+			sourceTree = "<group>";
+		};
 		11BABC5321E141E600642D46 = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +277,7 @@
 		11BABC8521E148EB00642D46 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				11AE545B2297CF3D0059835E /* samples */,
 				112625212210141200819596 /* notes */,
 				1126250D220ED64700819596 /* rests */,
 				11F8140B21ECA094005CC56E /* 05_long_ago.xml */,
@@ -528,6 +540,7 @@
 				11BABC9621E14DE300642D46 /* HelloWorld.xml in Resources */,
 				11BABC6821E141E700642D46 /* Assets.xcassets in Resources */,
 				119875A72270877E0022BBFE /* README.md in Resources */,
+				11AE545E2297CF750059835E /* mimimi.xml in Resources */,
 				11192A072210718C00B69A31 /* rest-16th.xml in Resources */,
 				1126252C22101ADE00819596 /* rest-quarter.xml in Resources */,
 				11192A0A221071A300B69A31 /* rest-64th.xml in Resources */,
@@ -551,6 +564,7 @@
 				119875A92270AE030022BBFE /* rest-256th.xml in Resources */,
 				11262520221010D500819596 /* rest-eighth.xml in Resources */,
 				11F8140C21ECA094005CC56E /* 05_long_ago.xml in Resources */,
+				11AE545D2297CF700059835E /* mimimi.xml in Resources */,
 				11262511220ED64700819596 /* rest-half.xml in Resources */,
 				1166558B21E9F0C200E886BA /* C-dur.xml in Resources */,
 			);
