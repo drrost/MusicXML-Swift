@@ -5,7 +5,6 @@ target 'MusicXML-Swift' do
 
   target 'MusicXML-SwiftTests' do
     inherit! :search_paths
-    pod 'iOSSnapshotTestCase'
   end
 
   target 'MusicXML-SwiftTests-Snapshots' do

@@ -575,7 +575,6 @@
 				11BABC6D21E141E700642D46 /* Sources */,
 				11BABC6E21E141E700642D46 /* Frameworks */,
 				11BABC6F21E141E700642D46 /* Resources */,
-				35A674A4241F40BEE4F02783 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -705,23 +704,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Created by: Rostyslav Druzhchenko\n#\n\n# Run SwiftLint\nSTART_DATE=$(date +\"%s\")\n\nSWIFT_LINT=/usr/local/bin/swiftlint\n\n# Run SwiftLint for given filename\nrun_swiftlint() {\n    local filename=\"${1}\"\n    if [[ \"${filename##*.}\" == \"swift\" ]]; then\n        ${SWIFT_LINT} autocorrect --path \"${filename}\"\n        ${SWIFT_LINT} lint --path \"${filename}\"\n    fi\n}\n\nif [[ -e \"${SWIFT_LINT}\" ]]; then\n    echo \"SwiftLint version: $(${SWIFT_LINT} version)\"\n    FULL_PATH=$\"$(git rev-parse --show-toplevel)\"\n    # Run for both staged and unstaged files\n    git diff --name-only | while read FILE_NAME; do run_swiftlint \"${FULL_PATH}/${FILE_NAME}\"; done\n    git diff --cached --name-only | while read FILE_NAME; do run_swiftlint \"${FULL_PATH}/${FILE_NAME}\"; done\nelse\n    echo \"${SWIFT_LINT} is not installed.\"\n    exit 0\nfi\n\nEND_DATE=$(date +\"%s\")\n\nDIFF=$(($END_DATE - $START_DATE))\necho \"SwiftLint took $(($DIFF / 60)) minutes and $(($DIFF % 60)) seconds to complete.\"\n";
-		};
-		35A674A4241F40BEE4F02783 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		4B1C3727FCA8FAF53C5E2D71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
