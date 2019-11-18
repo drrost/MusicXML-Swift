@@ -21,57 +21,89 @@ class ScorePartwiseView: UIView {
 
     fileprivate let color = UIColor.black
 
+    fileprivate var context: CGContext!
+
     // MARK: - Public API
 
-    func update(_ aScorePartwise: ScorePartwise) {
-        scorePartwise = aScorePartwise
+    func update(_ scorePartwise: ScorePartwise) {
+        self.scorePartwise = scorePartwise
     }
 
     // MARK: - From base clsses
 
-    override func draw(_ rect: CGRect) {
-        guard scorePartwise != nil else { return }
+    fileprivate func drawBackgroundObjects() {
 
-        guard let context = UIGraphicsGetCurrentContext() else { return }
-        drawText(context,
-                 text: scorePartwise.partList.scorePart.partName.partNameText)
+        let partName = scorePartwise.partList.scorePart.partName.partNameText ?? ""
+        draw(partName: partName, on: context)
         drawStaff(context)
+    }
+
+    fileprivate func drawMeasures() {
 
         let measures = scorePartwise.part.measures
-        guard measures.count > 0 else { return }
+        guard !measures.isEmpty else { return }
+
+        drawMeasuresAttributes(measures)
+        drawMeasuresContent(measures)
+    }
+
+    fileprivate func drawMeasuresAttributes(_ measures: [Measure]) {
 
         if let attributes = measures[0].attributes {
-            if let clef = attributes.clef {
-                let kClefSideOffset: CGFloat = 15.0
-                draw(clef: clef, context,
-                     point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
-            }
 
-            draw(time: attributes.time,
-                 context: context,
-                 point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
+            drawClef(attributes.clef)
+            drawTime(attributes.time)
         }
+    }
 
+    fileprivate func drawClef(_ clef: Clef?) {
+
+        guard let clef = clef else { return }
+
+        let kClefSideOffset: CGFloat = 15.0
+        draw(clef: clef, context,
+             point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
+    }
+
+    fileprivate func drawTime(_ time: Time?) {
+
+        guard let time = time else { return }
+
+        draw(time: time,
+             context: context,
+             point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
+    }
+
+    fileprivate func drawMeasuresContent(_ measures: [Measure]) {
         draw(measures, context)
+    }
+
+    override func draw(_ rect: CGRect) {
+
+        context = UIGraphicsGetCurrentContext()
+        guard scorePartwise != nil, context != nil else { return }
+
+        drawBackgroundObjects()
+        drawMeasures()
         closeLastStaff(context)
     }
 
-    // MARK: - Private API
+    // MARK: - Private
 
-    fileprivate func drawText(_ context: CGContext, text: String) {
+    fileprivate func draw(partName: String, on context: CGContext) {
 
         translate(context: context)
 
         let path = CGMutablePath()
         path.addRect(bounds)
 
-        let attrString = NSAttributedString(string: text)
+        let attrString = NSAttributedString(string: partName)
 
-        let framesetter = CTFramesetterCreateWithAttributedString(
+        let frameSetter = CTFramesetterCreateWithAttributedString(
             attrString as CFAttributedString)
 
         let frame = CTFramesetterCreateFrame(
-            framesetter, CFRangeMake(0, attrString.length), path, nil)
+            frameSetter, CFRangeMake(0, attrString.length), path, nil)
 
         CTFrameDraw(frame, context)
     }

@@ -10,6 +10,8 @@ import UIKit
 
 extension ScorePartwiseView {
 
+    // MARK: - Public
+
     func draw(clef: Clef, _ context: CGContext,
               point: CGPoint = CGPoint(x: 0.0, y: 0.0)) {
 
@@ -21,6 +23,8 @@ extension ScorePartwiseView {
 
         context.restoreGState()
     }
+
+    // MARK: - Private
 
     fileprivate func shift(to line: Int?, _ context: CGContext) {
         let defaultLine = 2
