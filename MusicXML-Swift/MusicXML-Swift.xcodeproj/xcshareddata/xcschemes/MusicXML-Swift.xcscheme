@@ -27,6 +27,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "11BABC5C21E141E600642D46"
+            BuildableName = "MusicXML-Swift.app"
+            BlueprintName = "MusicXML-Swift"
+            ReferencedContainer = "container:MusicXML-Swift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -40,18 +49,27 @@
                ReferencedContainer = "container:MusicXML-Swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "111685222383051500E4D7C5"
+               BuildableName = "MusicXML-SwiftTests-Spippets.xctest"
+               BlueprintName = "MusicXML-SwiftTests-Spippets"
+               ReferencedContainer = "container:MusicXML-Swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "111685302383065D00E4D7C5"
+               BuildableName = "MusicXML-SwiftTests-Snapshots.xctest"
+               BlueprintName = "MusicXML-SwiftTests-Snapshots"
+               ReferencedContainer = "container:MusicXML-Swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11BABC5C21E141E600642D46"
-            BuildableName = "MusicXML-Swift.app"
-            BlueprintName = "MusicXML-Swift"
-            ReferencedContainer = "container:MusicXML-Swift.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -73,8 +91,6 @@
             ReferencedContainer = "container:MusicXML-Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

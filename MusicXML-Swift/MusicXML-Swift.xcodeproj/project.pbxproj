@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111685342383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111685332383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift */; };
 		11192A072210718C00B69A31 /* rest-16th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253122106E1F00819596 /* rest-16th.xml */; };
 		11192A082210718C00B69A31 /* rest-128th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253622106E2700819596 /* rest-128th.xml */; };
 		11192A09221071A300B69A31 /* rest-32nd.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253222106E1F00819596 /* rest-32nd.xml */; };
@@ -70,10 +71,18 @@
 		11F8141421ECA1E2005CC56E /* 05_long_ago.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11F8140B21ECA094005CC56E /* 05_long_ago.xml */; };
 		11F8141B21ECAD7C005CC56E /* Beam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F8141A21ECAD7C005CC56E /* Beam.swift */; };
 		AEB4694C2FF5B1F741E0F442 /* Pods_MusicXML_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBD29B6D5A8C187292E26C0 /* Pods_MusicXML_SwiftTests.framework */; };
+		AF02322DCABE7D23C2FD8778 /* Pods_MusicXML_SwiftTests_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5EBD807914C4940DBD8A32 /* Pods_MusicXML_SwiftTests_Snapshots.framework */; };
 		AF7E637E0709C8E4FB73493A /* Pods_MusicXML_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7AD3D8374EDC45DBF6EA82 /* Pods_MusicXML_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		111685362383065D00E4D7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11BABC5421E141E600642D46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11BABC5C21E141E600642D46;
+			remoteInfo = "MusicXML-Swift";
+		};
 		11BABC7221E141E700642D46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11BABC5421E141E600642D46 /* Project object */;
@@ -85,6 +94,11 @@
 
 /* Begin PBXFileReference section */
 		0649F00DD18DA13F1EDA5BAB /* Pods-MusicXML-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-SwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		111685252383051500E4D7C5 /* MusicXML_SwiftTests_Spippets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicXML_SwiftTests_Spippets.swift; sourceTree = "<group>"; };
+		111685272383051500E4D7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		111685312383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicXML-SwiftTests-Snapshots.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		111685332383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicXML_SwiftTests_Snapshots.swift; sourceTree = "<group>"; };
+		111685352383065D00E4D7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1126250E220ED64700819596 /* rest-whole.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-whole.xml"; sourceTree = "<group>"; };
 		1126250F220ED64700819596 /* rest-half.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-half.xml"; sourceTree = "<group>"; };
 		11262516220EFC2400819596 /* NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
@@ -140,11 +154,22 @@
 		15FE5D3EC4150C7BD7F1A890 /* Pods-MusicXML-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-Swift.debug.xcconfig"; path = "Target Support Files/Pods-MusicXML-Swift/Pods-MusicXML-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		4C7AD3D8374EDC45DBF6EA82 /* Pods_MusicXML_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicXML_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D465070991959A50BA7B8F /* Pods-MusicXML-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-Swift.release.xcconfig"; path = "Target Support Files/Pods-MusicXML-Swift/Pods-MusicXML-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		8E5620B017E54E7CC5B74540 /* Pods-MusicXML-SwiftTests-Snapshots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-SwiftTests-Snapshots.release.xcconfig"; path = "Target Support Files/Pods-MusicXML-SwiftTests-Snapshots/Pods-MusicXML-SwiftTests-Snapshots.release.xcconfig"; sourceTree = "<group>"; };
 		CFBD29B6D5A8C187292E26C0 /* Pods_MusicXML_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicXML_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA657C2C8C85E45E0D07668 /* Pods-MusicXML-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-SwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE44797C66573FDB94855B1C /* Pods-MusicXML-SwiftTests-Snapshots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-SwiftTests-Snapshots.debug.xcconfig"; path = "Target Support Files/Pods-MusicXML-SwiftTests-Snapshots/Pods-MusicXML-SwiftTests-Snapshots.debug.xcconfig"; sourceTree = "<group>"; };
+		FD5EBD807914C4940DBD8A32 /* Pods_MusicXML_SwiftTests_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicXML_SwiftTests_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1116852E2383065D00E4D7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF02322DCABE7D23C2FD8778 /* Pods_MusicXML_SwiftTests_Snapshots.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11BABC5921E141E600642D46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +189,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111685242383051500E4D7C5 /* MusicXML-SwiftTests-Spippets */ = {
+			isa = PBXGroup;
+			children = (
+				111685252383051500E4D7C5 /* MusicXML_SwiftTests_Spippets.swift */,
+				111685272383051500E4D7C5 /* Info.plist */,
+			);
+			path = "MusicXML-SwiftTests-Spippets";
+			sourceTree = "<group>";
+		};
+		111685322383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				111685332383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift */,
+				111685352383065D00E4D7C5 /* Info.plist */,
+			);
+			path = "MusicXML-SwiftTests-Snapshots";
+			sourceTree = "<group>";
+		};
 		1126250D220ED64700819596 /* rests */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +273,8 @@
 				119875A62270877E0022BBFE /* README.md */,
 				11BABC5F21E141E600642D46 /* MusicXML-Swift */,
 				11BABC7421E141E700642D46 /* MusicXML-SwiftTests */,
+				111685242383051500E4D7C5 /* MusicXML-SwiftTests-Spippets */,
+				111685322383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots */,
 				11BABC5E21E141E600642D46 /* Products */,
 				411FD2E2033500C6672758D2 /* Pods */,
 				8D929C733EB03C4598517BEE /* Frameworks */,
@@ -241,6 +286,7 @@
 			children = (
 				11BABC5D21E141E600642D46 /* MusicXML-Swift.app */,
 				11BABC7121E141E700642D46 /* MusicXML-SwiftTests.xctest */,
+				111685312383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -463,6 +509,8 @@
 				71D465070991959A50BA7B8F /* Pods-MusicXML-Swift.release.xcconfig */,
 				DDA657C2C8C85E45E0D07668 /* Pods-MusicXML-SwiftTests.debug.xcconfig */,
 				0649F00DD18DA13F1EDA5BAB /* Pods-MusicXML-SwiftTests.release.xcconfig */,
+				EE44797C66573FDB94855B1C /* Pods-MusicXML-SwiftTests-Snapshots.debug.xcconfig */,
+				8E5620B017E54E7CC5B74540 /* Pods-MusicXML-SwiftTests-Snapshots.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -472,6 +520,7 @@
 			children = (
 				4C7AD3D8374EDC45DBF6EA82 /* Pods_MusicXML_Swift.framework */,
 				CFBD29B6D5A8C187292E26C0 /* Pods_MusicXML_SwiftTests.framework */,
+				FD5EBD807914C4940DBD8A32 /* Pods_MusicXML_SwiftTests_Snapshots.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -479,6 +528,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		111685302383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 111685382383065D00E4D7C5 /* Build configuration list for PBXNativeTarget "MusicXML-SwiftTests-Snapshots" */;
+			buildPhases = (
+				4B1C3727FCA8FAF53C5E2D71 /* [CP] Check Pods Manifest.lock */,
+				1116852D2383065D00E4D7C5 /* Sources */,
+				1116852E2383065D00E4D7C5 /* Frameworks */,
+				1116852F2383065D00E4D7C5 /* Resources */,
+				9F54C63E59556C37EC9D36C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				111685372383065D00E4D7C5 /* PBXTargetDependency */,
+			);
+			name = "MusicXML-SwiftTests-Snapshots";
+			productName = "MusicXML-SwiftTests-Snapshots";
+			productReference = 111685312383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		11BABC5C21E141E600642D46 /* MusicXML-Swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11BABC7A21E141E700642D46 /* Build configuration list for PBXNativeTarget "MusicXML-Swift" */;
@@ -524,10 +593,14 @@
 		11BABC5421E141E600642D46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Rostyslav Druzhchenko";
 				TargetAttributes = {
+					111685302383065D00E4D7C5 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 11BABC5C21E141E600642D46;
+					};
 					11BABC5C21E141E600642D46 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -553,11 +626,19 @@
 			targets = (
 				11BABC5C21E141E600642D46 /* MusicXML-Swift */,
 				11BABC7021E141E700642D46 /* MusicXML-SwiftTests */,
+				111685302383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1116852F2383065D00E4D7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11BABC5A21E141E600642D46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -642,6 +723,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4B1C3727FCA8FAF53C5E2D71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicXML-SwiftTests-Snapshots-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		67BEA2620835CAEB720ABA16 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -686,9 +789,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9F54C63E59556C37EC9D36C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicXML-SwiftTests-Snapshots/Pods-MusicXML-SwiftTests-Snapshots-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicXML-SwiftTests-Snapshots/Pods-MusicXML-SwiftTests-Snapshots-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicXML-SwiftTests-Snapshots/Pods-MusicXML-SwiftTests-Snapshots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1116852D2383065D00E4D7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111685342383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11BABC5821E141E600642D46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -735,6 +863,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		111685372383065D00E4D7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11BABC5C21E141E600642D46 /* MusicXML-Swift */;
+			targetProxy = 111685362383065D00E4D7C5 /* PBXContainerItemProxy */;
+		};
 		11BABC7321E141E700642D46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 11BABC5C21E141E600642D46 /* MusicXML-Swift */;
@@ -762,6 +895,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		111685392383065D00E4D7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE44797C66573FDB94855B1C /* Pods-MusicXML-SwiftTests-Snapshots.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5247P4Q94;
+				INFOPLIST_FILE = "MusicXML-SwiftTests-Snapshots/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rostyslavdruzhchenko.MusicXML-SwiftTests-Snapshots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicXML-Swift.app/MusicXML-Swift";
+			};
+			name = Debug;
+		};
+		1116853A2383065D00E4D7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5620B017E54E7CC5B74540 /* Pods-MusicXML-SwiftTests-Snapshots.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5247P4Q94;
+				INFOPLIST_FILE = "MusicXML-SwiftTests-Snapshots/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rostyslavdruzhchenko.MusicXML-SwiftTests-Snapshots";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusicXML-Swift.app/MusicXML-Swift";
+			};
+			name = Release;
+		};
 		11BABC7821E141E700642D46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -969,6 +1146,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		111685382383065D00E4D7C5 /* Build configuration list for PBXNativeTarget "MusicXML-SwiftTests-Snapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111685392383065D00E4D7C5 /* Debug */,
+				1116853A2383065D00E4D7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		11BABC5721E141E600642D46 /* Build configuration list for PBXProject "MusicXML-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
