@@ -30,5 +30,4 @@ class RestQuarterTests_Snapshots: FBSnapshotTestCase {
             // Then
             FBSnapshotVerifyViewController(homeVC)
         }
-
 }
