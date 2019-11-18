@@ -94,8 +94,6 @@
 
 /* Begin PBXFileReference section */
 		0649F00DD18DA13F1EDA5BAB /* Pods-MusicXML-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-SwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		111685252383051500E4D7C5 /* MusicXML_SwiftTests_Spippets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicXML_SwiftTests_Spippets.swift; sourceTree = "<group>"; };
-		111685272383051500E4D7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		111685312383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicXML-SwiftTests-Snapshots.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		111685332383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicXML_SwiftTests_Snapshots.swift; sourceTree = "<group>"; };
 		111685352383065D00E4D7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,15 +187,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		111685242383051500E4D7C5 /* MusicXML-SwiftTests-Spippets */ = {
-			isa = PBXGroup;
-			children = (
-				111685252383051500E4D7C5 /* MusicXML_SwiftTests_Spippets.swift */,
-				111685272383051500E4D7C5 /* Info.plist */,
-			);
-			path = "MusicXML-SwiftTests-Spippets";
-			sourceTree = "<group>";
-		};
 		111685322383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,7 +262,6 @@
 				119875A62270877E0022BBFE /* README.md */,
 				11BABC5F21E141E600642D46 /* MusicXML-Swift */,
 				11BABC7421E141E700642D46 /* MusicXML-SwiftTests */,
-				111685242383051500E4D7C5 /* MusicXML-SwiftTests-Spippets */,
 				111685322383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots */,
 				11BABC5E21E141E600642D46 /* Products */,
 				411FD2E2033500C6672758D2 /* Pods */,
