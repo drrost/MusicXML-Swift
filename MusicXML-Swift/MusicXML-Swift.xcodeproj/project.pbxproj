@@ -11,7 +11,8 @@
 		111685402383093200E4D7C5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116853F2383093200E4D7C5 /* UIViewController+Extension.swift */; };
 		1116854223831BAE00E4D7C5 /* RestEighthTests-Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116854123831BAE00E4D7C5 /* RestEighthTests-Snapshots.swift */; };
 		1116854523833B9A00E4D7C5 /* Rest16thTests-Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116854423833B9A00E4D7C5 /* Rest16thTests-Snapshots.swift */; };
-		1116854723833C0D00E4D7C5 /* Rest32thTests_Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116854623833C0D00E4D7C5 /* Rest32thTests_Snapshots.swift */; };
+		1116854723833C0D00E4D7C5 /* Rest32ndTests_Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116854623833C0D00E4D7C5 /* Rest32ndTests_Snapshots.swift */; };
+		1116854923833CC000E4D7C5 /* Rest64thTests_Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116854823833CC000E4D7C5 /* Rest64thTests_Snapshots.swift */; };
 		11192A072210718C00B69A31 /* rest-16th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253122106E1F00819596 /* rest-16th.xml */; };
 		11192A082210718C00B69A31 /* rest-128th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253622106E2700819596 /* rest-128th.xml */; };
 		11192A09221071A300B69A31 /* rest-32nd.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253222106E1F00819596 /* rest-32nd.xml */; };
@@ -104,7 +105,8 @@
 		1116853F2383093200E4D7C5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1116854123831BAE00E4D7C5 /* RestEighthTests-Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestEighthTests-Snapshots.swift"; sourceTree = "<group>"; };
 		1116854423833B9A00E4D7C5 /* Rest16thTests-Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rest16thTests-Snapshots.swift"; sourceTree = "<group>"; };
-		1116854623833C0D00E4D7C5 /* Rest32thTests_Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest32thTests_Snapshots.swift; sourceTree = "<group>"; };
+		1116854623833C0D00E4D7C5 /* Rest32ndTests_Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest32ndTests_Snapshots.swift; sourceTree = "<group>"; };
+		1116854823833CC000E4D7C5 /* Rest64thTests_Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest64thTests_Snapshots.swift; sourceTree = "<group>"; };
 		1126250E220ED64700819596 /* rest-whole.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-whole.xml"; sourceTree = "<group>"; };
 		1126250F220ED64700819596 /* rest-half.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-half.xml"; sourceTree = "<group>"; };
 		11262516220EFC2400819596 /* NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
@@ -218,7 +220,8 @@
 				1116853B2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift */,
 				1116854123831BAE00E4D7C5 /* RestEighthTests-Snapshots.swift */,
 				1116854423833B9A00E4D7C5 /* Rest16thTests-Snapshots.swift */,
-				1116854623833C0D00E4D7C5 /* Rest32thTests_Snapshots.swift */,
+				1116854623833C0D00E4D7C5 /* Rest32ndTests_Snapshots.swift */,
+				1116854823833CC000E4D7C5 /* Rest64thTests_Snapshots.swift */,
 			);
 			path = rests;
 			sourceTree = "<group>";
@@ -811,10 +814,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1116854723833C0D00E4D7C5 /* Rest32thTests_Snapshots.swift in Sources */,
+				1116854723833C0D00E4D7C5 /* Rest32ndTests_Snapshots.swift in Sources */,
 				1116854223831BAE00E4D7C5 /* RestEighthTests-Snapshots.swift in Sources */,
 				1116854523833B9A00E4D7C5 /* Rest16thTests-Snapshots.swift in Sources */,
 				1116853C2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift in Sources */,
+				1116854923833CC000E4D7C5 /* Rest64thTests_Snapshots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

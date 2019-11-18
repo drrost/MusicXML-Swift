@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        update("rest-16th.xml")
+        update("rest-32nd.xml")
     }
 
     func update(_ fileName: String) {

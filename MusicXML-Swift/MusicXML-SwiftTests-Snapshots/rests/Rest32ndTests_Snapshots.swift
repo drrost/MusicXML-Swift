@@ -1,5 +1,5 @@
 //
-//  Rest32thTests_Snapshots.swift
+//  Rest32ndTests_Snapshots.swift
 //  MusicXML-SwiftTests-Snapshots
 //
 //  Created by Rostyslav Druzhchenko on 18.11.2019.
@@ -10,7 +10,7 @@
 
 import FBSnapshotTestCase
 
-class Rest32thTests_Snapshots: FBSnapshotTestCase {
+class Rest32ndTests_Snapshots: FBSnapshotTestCase {
 
     override func setUp() {
         super.setUp()
@@ -25,7 +25,7 @@ class Rest32thTests_Snapshots: FBSnapshotTestCase {
         _ = homeVC.view
 
         // When
-        homeVC.update("rest-32th.xml")
+        homeVC.update("rest-32nd.xml")
 
         // Then
         FBSnapshotVerifyViewController(homeVC)
