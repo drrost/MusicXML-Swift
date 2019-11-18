@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		111685342383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111685332383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift */; };
+		1116853C2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116853B2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift */; };
+		111685402383093200E4D7C5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1116853F2383093200E4D7C5 /* UIViewController+Extension.swift */; };
 		11192A072210718C00B69A31 /* rest-16th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253122106E1F00819596 /* rest-16th.xml */; };
 		11192A082210718C00B69A31 /* rest-128th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253622106E2700819596 /* rest-128th.xml */; };
 		11192A09221071A300B69A31 /* rest-32nd.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1126253222106E1F00819596 /* rest-32nd.xml */; };
@@ -95,8 +96,9 @@
 /* Begin PBXFileReference section */
 		0649F00DD18DA13F1EDA5BAB /* Pods-MusicXML-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicXML-SwiftTests.release.xcconfig"; path = "Target Support Files/Pods-MusicXML-SwiftTests/Pods-MusicXML-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		111685312383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MusicXML-SwiftTests-Snapshots.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		111685332383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicXML_SwiftTests_Snapshots.swift; sourceTree = "<group>"; };
 		111685352383065D00E4D7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1116853B2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestQuarterTests-Snapshots.swift"; sourceTree = "<group>"; };
+		1116853F2383093200E4D7C5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1126250E220ED64700819596 /* rest-whole.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-whole.xml"; sourceTree = "<group>"; };
 		1126250F220ED64700819596 /* rest-half.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-half.xml"; sourceTree = "<group>"; };
 		11262516220EFC2400819596 /* NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
@@ -190,10 +192,18 @@
 		111685322383065D00E4D7C5 /* MusicXML-SwiftTests-Snapshots */ = {
 			isa = PBXGroup;
 			children = (
-				111685332383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift */,
+				1116853B2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift */,
 				111685352383065D00E4D7C5 /* Info.plist */,
 			);
 			path = "MusicXML-SwiftTests-Snapshots";
+			sourceTree = "<group>";
+		};
+		1116853E2383092200E4D7C5 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1116853F2383093200E4D7C5 /* UIViewController+Extension.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		1126250D220ED64700819596 /* rests */ = {
@@ -306,6 +316,7 @@
 			children = (
 				11BABC8821E148FF00642D46 /* lib */,
 				11BABC6021E141E600642D46 /* AppDelegate.swift */,
+				1116853E2383092200E4D7C5 /* utils */,
 				11BABC6221E141E600642D46 /* HomeViewController.swift */,
 			);
 			path = src;
@@ -783,7 +794,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111685342383065D00E4D7C5 /* MusicXML_SwiftTests_Snapshots.swift in Sources */,
+				1116853C2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +815,7 @@
 				11BABC8D21E1496C00642D46 /* Part.swift in Sources */,
 				11BABC6321E141E600642D46 /* HomeViewController.swift in Sources */,
 				11BABC8A21E1494100642D46 /* MusicXMLParser.swift in Sources */,
+				111685402383093200E4D7C5 /* UIViewController+Extension.swift in Sources */,
 				11F8140A21EB9698005CC56E /* ScorePartwiseView+Debug.swift in Sources */,
 				11BABCBD21E2B04900642D46 /* ScorePartwiseView.swift in Sources */,
 				11BABCB221E227DC00642D46 /* Pitch.swift in Sources */,
