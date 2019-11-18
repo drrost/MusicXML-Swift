@@ -687,7 +687,7 @@ extension ScorePartwiseView {
     fileprivate func drawRest64th(context: CGContext) {
 
         context.saveGState()
-        context.translateBy(x: 0.0, y: -44.0)
+        context.translateBy(x: 0.0, y: -35.0)
 
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 8.93, y: 0.56))
