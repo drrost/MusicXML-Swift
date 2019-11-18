@@ -31,32 +31,45 @@ class ScorePartwiseView: UIView {
 
     // MARK: - From base clsses
 
-    fileprivate func drawBackgroundObjects() {
+    override func draw(_ rect: CGRect) {
+
+        context = UIGraphicsGetCurrentContext()
+        guard scorePartwise != nil, context != nil else { return }
+
+        handleBackgroundObjects()
+        handleMeasures()
+
+        closeLastStaff(context)
+    }
+
+    // MARK: - Private
+
+    fileprivate func handleBackgroundObjects() {
 
         let partName = scorePartwise.partList.scorePart.partName.partNameText ?? ""
         draw(partName: partName, on: context)
         drawStaff(context)
     }
 
-    fileprivate func drawMeasures() {
+    fileprivate func handleMeasures() {
 
         let measures = scorePartwise.part.measures
         guard !measures.isEmpty else { return }
 
-        drawMeasuresAttributes(measures)
-        drawMeasuresContent(measures)
+        handleMeasuresAttributes(measures)
+        handleMeasuresContent(measures)
     }
 
-    fileprivate func drawMeasuresAttributes(_ measures: [Measure]) {
+    fileprivate func handleMeasuresAttributes(_ measures: [Measure]) {
 
         if let attributes = measures[0].attributes {
 
-            drawClef(attributes.clef)
-            drawTime(attributes.time)
+            handleClef(attributes.clef)
+            handleTime(attributes.time)
         }
     }
 
-    fileprivate func drawClef(_ clef: Clef?) {
+    fileprivate func handleClef(_ clef: Clef?) {
 
         guard let clef = clef else { return }
 
@@ -65,7 +78,7 @@ class ScorePartwiseView: UIView {
              point: CGPoint(x: kClefSideOffset, y: kStaffTopOffset - 6.0))
     }
 
-    fileprivate func drawTime(_ time: Time?) {
+    fileprivate func handleTime(_ time: Time?) {
 
         guard let time = time else { return }
 
@@ -74,21 +87,11 @@ class ScorePartwiseView: UIView {
              point: CGPoint(x: kStaffSideOffset + 35.0, y: kStaffTopOffset))
     }
 
-    fileprivate func drawMeasuresContent(_ measures: [Measure]) {
+    fileprivate func handleMeasuresContent(_ measures: [Measure]) {
         draw(measures, context)
     }
 
-    override func draw(_ rect: CGRect) {
-
-        context = UIGraphicsGetCurrentContext()
-        guard scorePartwise != nil, context != nil else { return }
-
-        drawBackgroundObjects()
-        drawMeasures()
-        closeLastStaff(context)
-    }
-
-    // MARK: - Private
+    // MARK: - Drawing (working with CGContext)
 
     fileprivate func draw(partName: String, on context: CGContext) {
 
