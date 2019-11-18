@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+target 'MusicXML-Swift' do
+  use_frameworks!
+
+  target 'MusicXML-SwiftTests' do
+    inherit! :search_paths
+    pod 'iOSSnapshotTestCase'
+  end
+
+end
