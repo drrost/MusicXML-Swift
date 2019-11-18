@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  MusicXML-Swift
 //
 //  Created by Rostyslav Druzhchenko on 1/5/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var scoreView: ScorePartwiseView!
 
@@ -17,7 +17,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scorePartwise = parser.parse("note-whole-division-1.xml") {
+        update("rest-quarter.xml")
+    }
+
+    func update(_ fileName: String) {
+        if let scorePartwise = parser.parse(fileName) {
             scoreView.update(scorePartwise)
         }
     }
