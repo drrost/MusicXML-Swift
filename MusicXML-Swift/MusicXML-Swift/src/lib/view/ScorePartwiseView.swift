@@ -63,7 +63,6 @@ class ScorePartwiseView: UIView {
     fileprivate func handleMeasuresAttributes(_ measures: [Measure]) {
 
         if let attributes = measures[0].attributes {
-
             handleClef(attributes.clef)
             handleTime(attributes.time)
         }
@@ -88,7 +87,20 @@ class ScorePartwiseView: UIView {
     }
 
     fileprivate func handleMeasuresContent(_ measures: [Measure]) {
-        draw(measures, context)
+
+        var point = CGPoint(
+            x: 70.0, y: kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace)
+
+        let count = measures.count
+
+        for (i, measure) in measures.enumerated() {
+            let shouldDrawLastClose = i == count - 1
+            let lastX = draw(measure: measure,
+                             context: context,
+                             startPoint: point,
+                             drawLastClose: shouldDrawLastClose)
+            point.x = lastX + 60.0
+        }
     }
 
     // MARK: - Drawing (working with CGContext)
@@ -123,15 +135,6 @@ class ScorePartwiseView: UIView {
             context.move(to: CGPoint(x: kStaffSideOffset, y: y))
             context.addLine(to: CGPoint(x: frame.size.width - kStaffSideOffset, y: y))
             context.drawPath(using: .fillStroke)
-        }
-    }
-
-    fileprivate func draw(_ measures: [Measure], _ context: CGContext) {
-        var point = CGPoint(
-            x: 70.0, y: kStaffTopOffset + CGFloat(kLinesNumber - 1) * kStaffSpace)
-        for measure in measures {
-            let lastX = draw(measure: measure, context: context, startPoint: point)
-            point.x = lastX + 60.0
         }
     }
 
