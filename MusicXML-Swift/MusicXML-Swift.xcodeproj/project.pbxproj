@@ -42,6 +42,7 @@
 		119875AA2270AEBC0022BBFE /* rest-256th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 119875A82270AE030022BBFE /* rest-256th.xml */; };
 		11AE545D2297CF700059835E /* mimimi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11AE545C2297CF700059835E /* mimimi.xml */; };
 		11AE545E2297CF750059835E /* mimimi.xml in Resources */ = {isa = PBXBuildFile; fileRef = 11AE545C2297CF700059835E /* mimimi.xml */; };
+		11B2A5DA238EBDC7005109BB /* RestHalfTests_Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A5D9238EBDC7005109BB /* RestHalfTests_Snapshots.swift */; };
 		11BABC6121E141E600642D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6021E141E600642D46 /* AppDelegate.swift */; };
 		11BABC6321E141E600642D46 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BABC6221E141E600642D46 /* HomeViewController.swift */; };
 		11BABC6621E141E600642D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BABC6421E141E600642D46 /* Main.storyboard */; };
@@ -123,6 +124,7 @@
 		119875A62270877E0022BBFE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		119875A82270AE030022BBFE /* rest-256th.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "rest-256th.xml"; sourceTree = "<group>"; };
 		11AE545C2297CF700059835E /* mimimi.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = mimimi.xml; sourceTree = "<group>"; };
+		11B2A5D9238EBDC7005109BB /* RestHalfTests_Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestHalfTests_Snapshots.swift; sourceTree = "<group>"; };
 		11BABC5D21E141E600642D46 /* MusicXML-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicXML-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BABC6021E141E600642D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BABC6221E141E600642D46 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		1116854323833B7E00E4D7C5 /* rests */ = {
 			isa = PBXGroup;
 			children = (
+				11B2A5D9238EBDC7005109BB /* RestHalfTests_Snapshots.swift */,
 				1116853B2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift */,
 				1116854123831BAE00E4D7C5 /* RestEighthTests-Snapshots.swift */,
 				1116854423833B9A00E4D7C5 /* Rest16thTests-Snapshots.swift */,
@@ -818,6 +821,7 @@
 				1116854223831BAE00E4D7C5 /* RestEighthTests-Snapshots.swift in Sources */,
 				1116854523833B9A00E4D7C5 /* Rest16thTests-Snapshots.swift in Sources */,
 				1116853C2383086E00E4D7C5 /* RestQuarterTests-Snapshots.swift in Sources */,
+				11B2A5DA238EBDC7005109BB /* RestHalfTests_Snapshots.swift in Sources */,
 				1116854923833CC000E4D7C5 /* Rest64thTests_Snapshots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
